@@ -95,6 +95,13 @@ git reset 5d69206
 
 `HEAD` is now set to that previous commit.
 
+How to reset remote as well
+
+```shell
+git reset --hard commit_SHA
+git push -f origin master
+```
+
 
 
 ### git reset review
@@ -472,6 +479,18 @@ index 760ccd3..0000000
 +++ /dev/null
 @@ -1,935 +0,0 @@                
 ```
+
+
+
+
+
+**revert && reset ** 
+
+-   --mixed(默认)：默认的时候，只有暂存区变化
+-   --hard参数：如果使用 --hard 参数，那么工作区也会变化
+-   --soft：如果使用 --soft 参数，那么暂存区和工作区都不会变化
+-   git revert是用一次逆向的commit“中和”之前的提交，因此日后合并老的branch时，之前提交合并的代码仍然存在，导致不能够重新合并
+-   但是git reset是之间把某些commit在某个branch上删除，因而和老的branch再次merge时，这些被回滚的commit应该还会被引入
 
 
 
