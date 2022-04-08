@@ -14,7 +14,7 @@ Divide big problem into some small parts, and sloved small parts one by one.
 
 **3 Tell me about your work experiences.**
 
-My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as software developer after I graduated. In those companies, I built some products for backend.
+My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as software developer in China. I will graduate in saskatchewan polytechnic June 2022.
 
 In Gaotum.
 
@@ -64,4 +64,8 @@ I think that will remind me tasks to do and keep update with team and also know 
 
     Thirdly, I’m happy to work in an enviroment with a lot of challenges so that I’ll never be boring.
 
-4.  **Introduce yourself**
+4.  **Introduce yourself by someone others**
+
+​	
+
+​	He is a talented student from saskatchewan polytechnic majored in software developer. Graduated from Beihang Univeristy with a master's degree in 2020, He has experience in Biadu and Gaotu as Software developer for almost 2 years. Having good understanding on software, he has great interest in back-end developer. He is familiar with Java, he has the ability to be a great team member and write efficient code. 

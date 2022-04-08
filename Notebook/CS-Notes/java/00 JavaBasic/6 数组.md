@@ -1,0 +1,836 @@
+# 数组
+
+## 1. 引入
+
+数组的引入--学生成绩
+
+【1】代码：
+
+```java
+import java.util.*;
+public class TestFor20{
+        public static void main(String[] args){
+          
+                //功能：录入十个学生的成绩，求和，求平均数：
+                //录入十个学生的成绩
+                //定义一个变量sum接收和：
+                int sum=0;
+                Scanner sc=new Scanner(System.in);
+                for(int i=1;i<=10;i++){
+                        System.out.print("请录入第"+i+"个学生的成绩：");
+                        int score=sc.nextInt();
+                        //求和
+                        sum+=score;
+                }
+                System.out.println("和为："+sum);
+                
+                //求平均数
+                System.out.println("平均数为："+sum/10);
+                
+                
+        }
+}
+```
+
+【2】上面的代码中有什么缺点？	
+
+​		例如：求出第6个学生的成绩是多少？  这个不可能完成，因为for循环每次结束，score就要消失了， 
+
+​		所以学生的成绩并没有存储下来。 
+
+​		我们要做的事就是：将学生的成绩存储下来。--------利用数组 
+
+
+
+## 2. 数组的学习
+
+【1】数组是相同类型数据的有序集合. 
+
+​		相同类型的若干个数据,按照一定先后次序排列组合而成。 
+
+​		其中,每一个数据称作一个数组元素 
+
+​		每个数组元素可以通过一个下标来访问它们. 
+
+【2】数组特点: 
+
+​		其长度是确定的。数组一旦被创建，它的大小就是不可以改变的。 
+
+​		其元素必须是相同类型,不允许出现混合类型。 
+
+​		数组中的元素可以是任何数据类型，包括基本类型和引用类型。 
+
+​		长度：通过属性获取：length 
+
+​		下标从0开始，到数组.length-1结束。 
+
+【3】代码：
+
+```java
+public class TestArray01{
+        public static void main(String[] args){
+          
+                //数组的学习：1.声明  2.创建  3.赋值  4.使用
+                //数组作用：用于数据的存储，数据有很多种类型，存什么类型的数据呢？
+                //数组有个特点：一旦定义一个数组，其中只能存放一种数据类型。
+                //以int类型数组为案例讲解：
+                
+                //1.声明
+                int[] arr;//定义一个数组，int类型数组，名字叫做arr
+                int arr2[];
+                //假如你只声明了数组，没有赋值，那么其实这个变量相当于不存在，反编译看根本没有这些变量。
+                int[] arr3 = null;//声明不赋值 和  =null  ，不是一回事，=null是真实存在这个数组的，
+          
+                //2.创建
+                arr=new int[4];
+                
+                //PS：声明和创建可以用一句话表示：int[] arr=new int[4];      
+                
+                //3.赋值
+                arr[0]=17;
+                arr[1]=90;
+                arr[2]=40;
+                arr[3]=71;
+                //arr[4]=100;
+                //数组越界异常：Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+                
+                //在数组开辟空间以后，每个位置都是有下标/索引的，我们就是通过这个索引来访问元素的。
+                //下标从0开始，到数组长度-1(arr.length-1)结束，访问其他位置就出异常。
+                
+                //4.使用
+                System.out.println(arr[2]);
+                System.out.println(arr[2]+100);//可以参与到后面的运算中去了。。。
+                
+                System.out.println("数组的长度："+arr.length);
+                
+        }
+}
+```
+
+
+
+### 2.1 内存分析
+
+```java
+int[] arr3 = null;
+int[] arr = new int[4];
+```
+
+![Screen Shot 2019-09-28 at 8.34.21 PM](https://tva1.sinaimg.cn/large/0081Kckwly1gmc4nm6ulfj31jc0o2434.jpg)
+
+说明：
+
+1. `int[] arr3 = null;` arr3先进栈，里面存的值是null，如果int[] arr3 为空的话，内存也只占一块（比较特殊）
+2. `int[] arr = new int[4];` arr 比arr3 后进栈，所以放到arr3的上面
+3. 发现有new关键字（所有的new都在堆中开辟空间，存在实例化后的对象），在堆中开空间，开辟四个格子，第一个格子的地址是1012，然后把第一个格的地址给了arr
+4. 因为int占四个字节，所以下一个地址是1016，接着1020，接着1024
+5. 根据地址访问数组的值，可以解释index为啥从0开始（右上角）。
+6. 然后int的初始化的值放到堆中，0，0，0，0
+
+补充：
+
+1. int[] — 引用数据类型—占用两块内存空间，
+2. int — 基本数据类型— 只占用一块空间，局部变量放入栈中（具体：main方法对应的栈帧：栈帧就是栈中的一块空间）
+
+3. 局部变量一定要初始化，static 变量放入方法区
+
+**注： 具体JVM构成看 “7面向对象.md-5内存分析”**
+
+
+
+## 3. 数组声明创建方式三种
+
+1.静态初始化 
+
+```java
+int[] arr = {12,324,45,56,67}; 
+int[] arr = new int[]{12,324,45,56,67}; 
+```
+
+2.动态初始化 
+
+```java
+int[] arr = new int[4]; // 可以将4改成很大的数，就变成了动态数组
+arr[0] = 12;
+arr[1] = 213;
+arr[2] = 34;
+```
+
+
+
+## 4. 完善保存学生成绩代码
+
+```java
+import java.util.*;
+public class TestFor20{
+        public static void main(String[] args){
+                //功能：录入十个学生的成绩，求和，求平均数：
+                //录入十个学生的成绩
+                //定义一个变量sum接收和：
+                int sum=0;
+                Scanner sc=new Scanner(System.in);
+                
+                //定义一个数组，int类型的数组，长度为：10：
+                int[] scores=new int[10];
+                           
+                for(int i=1;i<=10;i++){
+                        System.out.print("请录入第"+i+"个学生的成绩：");
+                        int score=sc.nextInt();
+                        //将每个成绩存入数组中：
+                        scores[i-1]=score;
+                        //求和
+                        sum+=score;
+                }
+                System.out.println("和为："+sum);
+                
+                //求平均数
+                System.out.println("平均数为："+sum/10);
+                
+                
+                //求出第6个学生的成绩是多少？
+                
+                System.out.println(scores[5]);
+                
+                //对数组进行遍历查看：（查看数组中的每一个元素：）
+                
+                //方式1：普通for循环
+                System.out.println("--------普通for循环----------------");
+                for(int i=0;i<=scores.length-1;i++){
+                        System.out.println("第"+(i+1)+"个学生的成绩是：");
+                        System.out.println(scores[i]);
+                }
+                
+                //方式2：增强for循环（foreach循环）
+                System.out.println("--------增强for循环----------------");
+                for(int s:scores)//对scores数组进行遍历，每一次的结果都用int s这个变量接收
+                        System.out.println(s);//循环的每一次将s在控制台上打印出来。
+                
+                //增强for循环：优点：代码简单    缺点：不能进行跟索引相关的操作。
+                
+                //方式3：逆向遍历：
+                System.out.println("--------逆向遍历----------------");
+                for(int i=scores.length-1;i>=0;i--)
+                        System.out.println(scores[i]);
+                
+                
+        }
+}
+```
+
+
+
+## 5. 数组的应用
+
+### 5.1 数组最值问题
+
+【1】实现一个功能，求出数组中最大的数，和最大数对应的索引。（不是排序）
+
+​		----思路：“打擂”原理。
+
+```java
+public class TestArray02{
+        public static void main(String[] args){
+          
+                //实现一个功能，求出数组中最大的数，和最大数对应的索引。
+                //给定一个数组：
+                int[] arr={12,23,45,7,27,21,57,3};
+          
+                //"打擂"
+                //暂定数组最大数：
+                int maxNum=12;
+          
+                //暂定数组最大数对应的索引：
+                int maxIndex=0;
+          
+                //“挨个上去打”：--一个一个来---》数组进行遍历：
+                for(int i=0;i<=arr.length-1;i++){
+                        if(arr[i]>=maxNum){
+                                maxNum=arr[i];
+                                maxIndex=i;
+                        }
+                }
+                
+                System.out.println("当前数组中最大的数："+maxNum);
+                System.out.println("当前数组中最大数的索引："+maxIndex);                             
+   }
+}
+```
+
+【2】将最值问题提取出一个方法： 
+
+​		定义一个方法，求数组中最大值： 
+
+```java
+public class TestArray03{
+        public static void main(String[] args){
+          
+                //实现一个功能，求出数组中最大的数
+                //给定一个数组：
+                int[] arr = {12,23,45,7,127,21,57,3};
+                int maxNum = getMaxNum(arr);
+                System.out.println(maxNum);
+        }
+        
+  
+        //定义一个方法：求最大值：
+        public static int getMaxNum(int[] arr){
+                //"打擂"
+                //暂定数组最大数：
+                int maxNum=12; // 局部变量要初始化，不是会报错
+                
+                //“挨个上去打”：--一个一个来---》数组进行遍历：
+                for(int i=0;i<=arr.length-1;i++){
+                        if(arr[i]>=maxNum){
+                                maxNum=arr[i];
+                        }
+                }
+                
+                return maxNum;
+        }
+}
+```
+
+【3】画内存：
+
+![image_40697](https://tva1.sinaimg.cn/large/0081Kckwly1gmc4npl7zoj31110e5tb4.jpg)
+
+说明：
+
+1. 从main方法里开始走方法，所以首先在内存中为main方法开辟一个栈帧。
+2. `int[] arr = {12, 23, 45, 7, 127, 21}` 在堆中定义一个数组，在把数放进去，然后把第一个元素的地址给栈中的arr，值是数组对象的地址
+3. `int maxNum = getMaxNum(arr) `调用这个方法，在栈中为这个方法开辟一块栈帧。传入的形参`int[] arr`放到getMaxNum中，传入的值是0x99
+4. `int maxNum=12;`在getMaxNum栈帧中顶一个maxNum，值是12
+5. 接下来开始循环，将堆中的数组一次和maxNum进行比较，比较一轮下来发现最大的数是127，12就被替换成127
+6. `return maxNum;`将方法的返回值返回方法的调用处`int maxNum = getMaxNum(arr)`，在main方法的栈帧中有个maxNum，把返回值给了maxNum。
+7. 然后getMaxNum方法结束，在栈中进行出栈工作。
+
+总结： 
+
+​		0.形参和局部变量都放入栈中，new出来的东西放入堆中 
+
+​		1.引用数据类型做形参，内存：传入的是 地址值的“副本” 
+
+​		2.以前的基本数据类型：直接就是值传递 
+
+​		3.当方法结束的时候，方法对应开辟的栈帧要在栈中消失 ---》出栈 
+
+​		4.堆中无用内存被垃圾收集机制清理掉 
+
+
+
+### 5.2 查询
+
+【1】查询指定位置的元素：
+
+```java
+public class TestArray04{
+        public static void main(String[] args){
+                //给定一个数组，查询下标为3的元素：
+                int[] arr={12,34,45,576,3,5};
+                //查询下标为3的元素
+                System.out.println(arr[3]);
+                //查询下标为0的元素
+                System.out.println(arr[0]);//会根据地址进行查找，一步到位！
+        }
+}
+```
+
+​		数组的优点：查找效率高，一步到位！
+
+【2】查询指定元素对应的索引:
+
+```java
+public class TestArray04{
+        public static void main(String[] args){
+                //给定一个数组，查询下标为3的元素：
+                int[] arr={12,34,45,576,3,5};
+                //查询下标为3的元素
+                System.out.println(arr[3]);
+                //查询下标为0的元素
+                System.out.println(arr[0]);//会根据地址进行查找，一步到位！
+                
+                //给定一个数组，查询第一个36这个元素对应的索引：
+                int[] arr2={12,36,23,45,67,36,8};
+                
+                //遍历数组，挨个跟36比较，如果匹配 就停止查找
+                int index=-1;//给除了0-arr2.length-1之间的值都可以，一般我们都给-1
+                for(int i=0;i<=arr2.length-1;i++){
+                        if(arr2[i]==36){
+                                index=i;
+                                break;//找到第一个36循环就停止！
+                        }
+                }
+                
+                if(index>=0){
+                        System.out.println("第一个36对应的索引是："+index);
+                }else{
+                        System.out.println("查无此数！");
+                }                
+        }
+}
+```
+
+【3】查询指定元素对应的索引:---》提取一个方法：
+
+```java
+public class TestArray05{
+        public static void main(String[] args){
+                //给定一个数组，查询第一个36这个元素对应的索引：
+                int[] arr2={12,36,23,45,67,36,8};
+                
+                //调用下面的方法：
+                int index=getIndex(arr2,136);
+                
+                //对返回值进行判断：
+                if(index>=0){
+                        System.out.println("第一个36对应的索引是："+index);
+                }else{
+                        System.out.println("查无此数！");
+                }
+                
+        }
+        
+        public static int getIndex(int[] arr,int num){
+                //遍历数组，挨个跟36比较，如果匹配 就停止查找
+                int index=-1;//给除了0-arr2.length-1之间的值都可以，一般我们都给-1
+                for(int i=0;i<=arr.length-1;i++){
+                        if(arr[i]==num){
+                                index=i;
+                                break;//找到第一个36循环就停止！
+                        }
+                }
+                //方法返回值：index:
+                return index;
+        }      
+}
+```
+
+
+
+### 5.3 添加元素
+
+```java
+public class TestArray06{
+        public static void main(String[] args){
+          
+                //给定一个数组，在下标为1的位置上添加一个元素888
+                //{12,34,45,65,45,44,7}--->{12,888,34,45,65,45,44}
+                //给定数组：
+                int[] arr={12,34,45,65,45,44,7};
+                //          0  1  2  3  4  5  6
+                
+                //输出添加前的数组：
+                for(int a:arr){
+                        System.out.print(a+"\t");
+                }
+                
+                //添加：后面的数要挨个移动
+                /*
+                arr[6]=arr[5];
+                arr[5]=arr[4];
+                arr[4]=arr[3];
+                arr[3]=arr[2];
+           			arr[2]=arr[1];
+                */
+          
+                int n=3;//在下标为n的位置上添加元素
+                for(int i=arr.length-1;i>=(n+1);i--){
+                        arr[i]=arr[i-1];
+                }
+                arr[n]=666;		      
+                
+                //输出添加后的数组：
+                System.out.println("\n---添加后：---"); // \n 换行
+                for(int a:arr){
+                        System.out.print(a+"\t");// \t：Tab键
+                }                      
+        }
+}
+```
+
+
+
+### 5.4 删除元素
+
+ 【1】删除指定位置的元素：
+
+```java
+public class TestArray07{
+        public static void main(String[] args){
+          
+                //给定一个数组，删除下标为2的元素：
+                //{12,34,45,65,45,44,7}--->{12,34,65,45,44,7,0}
+                //给定数组：
+        				int[] arr={12,34,45,65,45,44,7};
+                //          0  1  2  3  4  5  6
+                
+                //遍历删除前的数组：
+                for(int a:arr){
+                        System.out.print(a+"\t");
+                }
+                
+                //删除下标为2的元素：后面的数往前串
+                /*
+                arr[2]=arr[3];
+                arr[3]=arr[4];
+                arr[4]=arr[5];
+		            arr[5]=arr[6];
+		            arr[6]=0;
+                */
+                int index=2;//我想要删除下标为index的元素
+                for(int i=index;i<=arr.length-2;i++){
+                        arr[i]=arr[i+1];
+                }
+                arr[arr.length-1]=0;
+                
+                //遍历删除后的数组：
+                System.out.println("\n-----删除后-----：");
+                for(int a:arr){
+                        System.out.print(a+"\t");
+                }
+        }
+}
+```
+
+【2】删除指定的元素：
+
+```java
+public class TestArray08{
+        public static void main(String[] args){
+          
+                //给定一个数组，删除数组中的元素34（第一个）：
+                //{12,34,45,65,45,44,7}--->{12,45,65,45,44,7,0}
+                //给定数组：
+        				int[] arr={12,34,45,65,45,44,7};
+                //          0  1  2  3  4  5  6
+                
+                //遍历删除前的数组：
+                for(int a:arr){
+                        System.out.print(a+"\t");
+                }
+                //找到134这个元素对应的索引：
+                int index=-1;
+                for(int i=0;i<=arr.length-1;i++){
+                        if(arr[i]==134){
+                                index=i;
+                                break;
+                        }
+                }
+                if(index>=0){
+                        //删除下标为2的元素：
+                
+                        //我想要删除下标为index的元素---》利用上面的index：
+                        for(int i=index;i<=arr.length-2;i++){
+                                arr[i]=arr[i+1];
+                        }
+                        arr[arr.length-1]=0;
+                }else{
+                        System.out.println("\n并没有找到你要删除的那个元素！");
+                }
+                
+                //遍历删除后的数组：
+                System.out.println("\n-----删除后-----：");
+                for(int a:arr){
+                        System.out.print(a+"\t");
+                }
+        }
+}
+```
+
+总结： 
+
+​		数组的优点：查询效率高，一步到位 
+
+​		数组的缺点：删除和添加效率低，需要移动大量的元素 
+
+
+
+## 6.main方法讲解
+
+【1】main方法，程序的入口，有固定的格式： 
+
+```java
+public static void main(String[] args){ 
+
+} 
+```
+
+分析： 
+
+​		public static --->方法的权限修饰符（面向对象） 
+
+​		void:没有方法的返回值，类型对应为void 
+
+​		main:方法名 
+
+​		(String[] args)：形式参数---》方法定义的不确定因素 
+
+
+
+【2】程序中是否可以有其他的方法，名字为main？可以： 
+
+```java
+public class Testmain{
+        //程序的入口，格式固定：
+        public static void main(String[] args){
+                
+        }
+        //重载：同一个类中，只跟方法名和形参列表有关
+        public void main(){                
+        }
+}
+```
+
+
+
+【3】对于main方法来说，形参是String[] args,那么虚拟机在调用main方法的时候，是否传入参数？可以，在默认的情况下，实参为new String[0]:
+
+```java
+public class Testmain{
+  
+        //程序的入口，格式固定：
+        public static void main(String[] args){//String[] args=new String[0];
+                //int[] arr1;--->反编译发现arr1不存在
+                //int[] arr2=null;
+                //System.out.println(arr2.length);--->会报错，空指针异常
+                //int[] arr3=new int[0];
+                //System.out.println(arr3.length);//0	
+                
+                System.out.println(args.length);
+                for(String s:args){
+                        System.out.println(s);
+                }
+        }
+        //重载：同一个类中，只跟方法名和形参列表有关
+        public void main(){
+                
+        }
+}
+```
+
+
+
+那么我们可以在执行的时候，向main方法中传入实参吗？
+
+​		要是中间有空格等特殊符号，必须加“”, 传入 fei fei 这一个实参，需要"fei fei"用引号括起来 
+
+【4】在eclipse中运行的时候想要传入实参： 
+
+​			run as--->run configurations---->arguments--->录入实参即可 
+
+
+
+## 7.可变参数
+
+```java
+public class TestArray10{
+        public static void main(String[] args){
+                //add();
+                //add(10);
+                //add(10,20);
+                //add(10,20,30);
+                add(10,20,30,40);
+                //add(new int[]{12,34,45,6});
+        }
+  	
+        /*
+        1.int...arr:可变参数，在JDK1.5之后新出的
+        2.作用：它可以帮我们解决方法名相同，形参列表不同的重载问题，比如上面的6个add方法
+        3.表面上我们在使用可变参数，但是实际上 内部当做数组来处理。
+        4.当可变参数和其他类型一起作为形参的时候，可变参数必须放在最后。
+        
+        */
+  
+        public static void add(int a,int...arr){
+                System.out.println("你好。。");
+                //处理arr:
+                for(int num:arr){
+                        System.out.println(num);
+                }
+                System.out.println("--------------------");
+        }       
+}
+```
+
+
+
+##8. Arrays工具类中常用方法
+
+```java
+import java.util.*;
+public class TestArray11{
+        public static void main(String[] args){
+          
+                //操纵数组，先给定一个数组：
+                int[] arr=new int[]{136,6,27,18,78};
+          	
+                //Arrays工具类---：
+          
+                //1.toString 
+                //System.out.println(Arrays.toString(arr));//数组的遍历，并且以一个好看的形式打印在控制台。[12, 34, 56, 67, 78]
+          
+                //自己实现：[12, 34, 56, 67, 78]
+                /*
+                System.out.print("[");
+                for(int i=0;i<=arr.length-1;i++){
+                        if(i!=arr.length-1){
+                                System.out.print(arr[i]+",");
+                        }else{
+                                System.out.print(arr[i]+"]");
+                        }
+                }
+                */
+          
+                //2.排序：
+                //Arrays.sort(arr);//按照升序排序
+                //System.out.println(Arrays.toString(arr));
+                
+                //3.二分法查找：必须在有序的数组中进行查找，如果查找不到返回值为负数！
+                //Arrays.sort(arr);
+                //System.out.println(Arrays.binarySearch(arr,189));//在arr数组中找18元素对应的索引
+                
+                //4.复制：
+                int[] newArr=Arrays.copyOf(arr,10);
+                System.out.println(Arrays.toString(newArr));
+                
+                int[] newArr02=Arrays.copyOfRange(arr,2,4);//[2,4)--->2,3,没有4
+                System.out.println(Arrays.toString(newArr02));
+                
+                //5.数组比较
+                int[] arr1={1,2,3,4};
+                int[] arr2={1,2,3,4};
+                System.out.println(arr1 == arr2);//永远是：false---：》比较的是左右两侧的地址的值，无论数是不是一样的，地址肯定是不一样的
+                System.out.println(Arrays.equals(arr1,arr2));//比较的：数组中元素具体的数值。数组相等的条件：元素的个数必须相同，并且对应位置的元素也相等。
+          
+          			//6.数组元素比较 				2019.9.15 from java编程思想
+          			// 方法1：实现Comparable接口。使你的类具有“天生的比较能力“。此接口很简单，只有compareTo()一个方法。此方法接收另一个Object为参数，如果当前对象小于参数则返回负值，如果相等则返回零，如果当前对象大于参数，则返回正值。
+    
+                //6.填充：
+                Arrays.fill(arr1,0);
+                Arrays.fill(arr1,0,2,77);//[0,2) 从0到2之间填充77
+                System.out.println(Arrays.toString(arr1));
+        }
+}
+```
+
+【2】System类中的数组复制方法：
+
+| Modifier and Type | Method                                                       | Description                                                  |
+| :---------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| `static void`     | `arraycopy(Object src, int srcPos, Object dest, int destPos, int length)` | Copies an array from the specified source array, beginning at the specified position, to the specified position of the destination array. |
+
+![image_46989](https://tva1.sinaimg.cn/large/0081Kckwly1gmc4np8rrrj30i90b60u2.jpg)
+
+```java
+int[] a={12,34,45,57,78,657,46,45};
+int[] b=new int[10];
+System.arraycopy(a,2,b,3,4);
+System.out.println(Arrays.toString(a));
+System.out.println(Arrays.toString(b));
+```
+
+
+
+## 9. 二维数组
+
+【1】引入：
+
+![image_1188](https://tva1.sinaimg.cn/large/0081Kckwly1gmc4nod350j30zx0dy0vb.jpg)
+
+【2】写代码：
+
+```java
+public class TestArray12{
+        public static void main(String[] args){
+          
+                //定义一个int[][]数组，二维数组：
+                //数组的声明：
+                int[] arr2[];
+                int arr3[][];
+                int[][] arr;
+                
+          			//赋值：
+                arr=new int[3][];//声明了一个数组arr，一维数组长度为3，存在是引用数据类型int[], 但是由于是空的，所以存的null
+                arr=new int[3][4];//声明了一个数组arr，一维数组长度为3，每个格子中装的数组长度为4
+                //arr={{1,23,435},{23,45,56,12},{34,56}};//声明了一个数组arr，一维数组长度为3，
+                
+                //声明和赋值可以合成为一句话：
+                int[][] arr4=new int[3][];
+          
+                //开始向每个格子中放数组了：
+                int[] a={1,2,3};
+          			int[] b=new int[]{4,5,6};
+                arr4[0]=a;             
+                arr4[1]=b;
+                arr4[2]=new int[]{7,8,9,10,11};
+                
+                
+                //遍历二维数组：
+                System.out.println(arr4[1][1]);
+                System.out.println("--------");
+                
+                //普通for+普通for、
+                for(int i=0;i<=arr4.length-1;i++){
+                        for(int j=0;j<=arr4[i].length-1;j++){
+                                System.out.println(arr4[i][j]);
+                        }
+                        System.out.println("--------");
+                        
+                }
+          
+                System.out.println("----普通for+增强for----");
+                //普通for+增强for：
+                for(int i=0;i<=arr4.length-1;i++){
+                        for(int num:arr4[i]){
+                                System.out.println(num);
+                        }
+                        System.out.println("--------");
+                        
+                }
+          
+                System.out.println("---增强for+增强for:-----");
+                //增强for+增强for:
+                for(int[] e:arr4){
+                        for(int f:e){
+                                System.out.println(f);
+                        }
+                }
+                
+                //增强for+普通for
+                System.out.println("----增强for+普通for----");
+                for(int[] e:arr4){
+                        for(int i=0;i<=e.length-1;i++){
+                                System.out.println(e[i]);
+                        }
+                }                            
+        }
+}
+```
+
+【3】内存：
+
+![image_56728](https://tva1.sinaimg.cn/large/0081Kckwly1gmc4nnrgcvj310y0eitb4.jpg)
+
+
+
+```java
+public class Demo {
+        public static void main(String[] args){
+		//		int[][] arr;
+		//		
+		//		arr={{1,23,435},{23,45,56,12},{34,56}};
+          int[][] arr7={{1,23,435},{23,45,56,12},{34,56}};//声明了一个数组arr，一维数组长度为3，
+                                
+		//		int[] a;
+		//		a={1,2,3};
+                
+		//		int[] a={1,2,3};
+                               
+        }
+}
+```
+
+注：
+
+​		数组命名时名称与[]可以随意排列，但声明的二维数组中第一个中括号中必须要有值，它代表的是在该二维数组中有多少个一维数组。
+
