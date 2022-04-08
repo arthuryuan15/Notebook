@@ -1,4 +1,4 @@
-# learn Javascript
+# learn JavaScript
 https://www.codecademy.com/learn/introduction-to-javascript
 
 https://learning.oreilly.com/library/view/javascript-novice-to/9781492023623/Text/ch1.html#programming
@@ -11,13 +11,31 @@ Review
 Way to go! Here are some of the major concepts for conditionals:
 
 - An `if` statement checks a condition and will execute a task if that condition evaluates to `true`.
+
 - `if...else` statements make binary decisions and execute different code blocks based on a provided condition.
+
 - We can add more conditions using `else if` statements.
+
 - Comparison operators, including `<`, `>`, `<=`, `>=`, `===`, and `!==` can compare two values.
+
+  * `==` in JavaScript is used for comparing two variables, but it ignores the datatype of variable
+
+  *  `===` is used for comparing two variables, but this operator also **checks datatype** and compares two values.
+
+  https://bit.ly/3uppRqJ
+
+  
+
+  
+
 - The logical and operator, `&&`, or “and”, checks if both provided expressions are truthy.
+
 - The logical operator `||`, or “or”, checks if either provided expression is truthy.
+
 - The bang operator, `!`, switches the truthiness and falsiness of a value.
+
 - The ternary operator is shorthand to simplify concise `if...else` statements.
+
 - A `switch` statement can be used to simplify the process of writing multiple `else if` statements. The `break` keyword stops the remaining `case`s from being checked and executed in a `switch` statement.
 
 
@@ -66,11 +84,28 @@ Way to go! Here are some of the major concepts for conditionals:
   }
   ```
 
-##4 Scope
+## 4 Scope
 
-global scope
+Always use let instead of var , Because let used **only in the block it’s defined in**
 
-local scope
+
+
+```java
+for(let i = 1; i <= 3; i++){
+    console.log(i);
+}
+i++; // i is not define
+console.log(i);
+
+for(var i = 1; i <= 3; i++){
+    console.log(i);// 1\n 2\n 3\n
+}
+console.log(i); // 4
+```
+
+
+
+
 
 ## 5 String
 
@@ -691,6 +726,8 @@ let halley = {
 }
 ```
 
+
+
 Now, imagine you own a dog daycare and want to create a catalog of all the dogs who belong to the daycare. Instead of using the syntax above for every dog that joins the daycare, we can create a `Dog` class that serves as a template for creating new `Dog` objects. For each new dog, you can provide a value for their name.
 
 As you can see, classes are a great way to reduce duplicate code and debugging time.
@@ -699,7 +736,7 @@ After we lay the foundation for classes in the first few exercises, we will intr
 
 
 
-###3 Constructor
+### 3 Constructor
 
 In the last exercise, you created a class called `Dog`, and used it to produce a `Dog` object.
 
@@ -828,7 +865,7 @@ In the example above, we create two new `Dog` instances, `nikko` and `bradford`.
 
 ### 7 Inheritance I
 
-Imagine our doggy daycare is so successful that we decide to expand the business and open a kitty daycare. Before the daycare opens, we need to create a `Cat` class so we can quickly generate `Cat` instances. We know that the properties in our `Cat` class (`name`, `behavior`) are similar to the properties in our `Dog`class, though, there will be some differences, because of course, cats are not dogs. 
+Imagine our doggy daycare is so successful that we decide to expand the business and open a kitty daycare. Before the daycare opens, we need to create a `Cat` class so we can quickly generate `Cat` instances. We know that the properties in our `Cat` class (`name`, behavior) are similar to the properties in our `Dog`class, though, there will be some differences, because of course, cats are not dogs. 
 
 Let’s say that our `Cat` class looks like this:
 
@@ -1075,7 +1112,7 @@ The correct answer is `1`. But why?
 
 
 
-###11 nheritance V
+### 11 Inheritance V
 
 In addition to the inherited features, child classes can contain their own properties, getters, setters, and methods. 
 

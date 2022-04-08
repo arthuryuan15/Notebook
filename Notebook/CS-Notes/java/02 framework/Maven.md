@@ -417,3 +417,9 @@ after that you need to add some tag in pomx.ml
 		</mirror>
 ```
 
+
+
+# POM
+
+https://maven.apache.org/guides/introduction/introduction-to-the-pom.html
+

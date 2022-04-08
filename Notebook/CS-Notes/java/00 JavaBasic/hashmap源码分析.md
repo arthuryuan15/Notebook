@@ -1,13 +1,5 @@
 ## Hashmap 源码分析
 
-
-
-HashMap是数组+链表+红黑树（JDK1.8增加了红黑树部分）实现的，如下所示
-
-<img src="/Users/yuanjinshuai/Library/Application Support/typora-user-images/image-20210324113804208.png" alt="image-20210324113804208" style="zoom:33%;" />
-
-
-
 ### 1. hash算法介绍
 
 散列表，又称哈希表，它是基于快速存取的角度设计的，也是一种典型的“空间换时间”的做法。
@@ -15,10 +7,6 @@ HashMap是数组+链表+红黑树（JDK1.8增加了红黑树部分）实现的�
 散列表（hash table），是根据关键码值（key value）而直接进行访问的数据结构。
 
 ​	
-
-hashmap时间复杂度, 理想情况下HashMap的时间复杂度为O（1）
-
-
 
 （1）计算出元素(key)对应的哈希码hashcode
 
@@ -38,7 +26,7 @@ hashmap时间复杂度, 理想情况下HashMap的时间复杂度为O（1）
   
   // 空参构造方法
   public HashMap() {
-    // 0.75f 默认负载因子的赋值 hashmap的初始长度是16
+    // 0.75f 默认负载因子的赋值
     this.loadFactor = 0.75F; 
   }
   
