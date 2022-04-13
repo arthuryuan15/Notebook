@@ -4,6 +4,28 @@ https://www.codecademy.com/learn/introduction-to-javascript
 https://learning.oreilly.com/library/view/javascript-novice-to/9781492023623/Text/ch1.html#programming
 
 ## 1 Introduction
+
+**Primitive Data Types**
+
+- String
+- Symbol
+- Number
+- Boolean
+- Undefined
+- Null
+
+**Variable **
+
+In versions of JavaScript previous to ES6, variables were declared using the keyword `var`
+
+The main difference was that variables declared using `let` and `const` have block scope
+
+
+
+
+
+
+
 ## 2 Conditionals
 
 Review
@@ -26,8 +48,6 @@ Way to go! Here are some of the major concepts for conditionals:
 
   
 
-  
-
 - The logical and operator, `&&`, or “and”, checks if both provided expressions are truthy.
 
 - The logical operator `||`, or “or”, checks if either provided expression is truthy.
@@ -37,6 +57,10 @@ Way to go! Here are some of the major concepts for conditionals:
 - The ternary operator is shorthand to simplify concise `if...else` statements.
 
 - A `switch` statement can be used to simplify the process of writing multiple `else if` statements. The `break` keyword stops the remaining `case`s from being checked and executed in a `switch` statement.
+
+
+
+
 
 
 
@@ -701,9 +725,9 @@ Note: You will see errors as you work through this exercise, but by the end the 
 
 ## 9 Classes
 
-### 1 Introduction to Classes
+https://learning.oreilly.com/library/view/javascript-novice-to/9781492023623/Text/ch12.html#object-oriented-programming
 
-JavaScript is an *object-oriented programming* (OOP) language we can use to model real-world items. In this lesson, you will learn how to make *classes*. Classes are a tool that developers use to quickly produce similar objects.
+### 1 Introduction to Classes
 
 Take, for example, an object representing a dog named `halley`. This dog’s `name` (a key) is `"Halley"` (a value) and has an `age` (another key) of `3` (another value). We create the `halley` object below:
 
@@ -1181,13 +1205,9 @@ Now that we’ve abstracted animal daycare features, it’s easy to see how you 
 
 
 
-###12 Static Methods
+### 12 Static
 
-Sometimes you will want a class to have methods that aren’t available in individual instances, but that you can call directly from the class. 
-
-Take the `Date` class, for example — you can both create `Date` instances to represent whatever date you want, and call *static* methods, like `Date.now()` which returns the current date, directly from the class. The `.now()` method is static, so you can call it directly from the class, but not from an instance of the class. 
-
-Let’s see how to use the `static` keyword to create a static method called `generateName` method in our `Animal` class:
+A static method is called by the class directly rather than by instances of the class. Static methods are not available to instances of the class.
 
 ```javascript
 class Animal {
@@ -1195,6 +1215,8 @@ class Animal {
     this._name = name;
     this._behavior = 0;
   }
+    
+  static age = 10; 
  
   static generateName() {
     const names = ['Angel', 'Spike', 'Buffy', 'Willow', 'Tara'];
@@ -1219,7 +1241,62 @@ const tyson = new Animal('Tyson');
 tyson.generateName(); // TypeError
 ```
 
-The example above will result in an error, because you cannot call static methods (`.generateName()`) on an instance (`tyson`).
+Note: for variable, same as method
+
+### 13 Modifiers
+
+public, private, protected
+
+By default, an object's methods are public in JavaScript.
+
+**private**
+
+```javascript
+class ObjectCreator {
+    #meaningOfLife;
+
+    constructor(name) {
+        this.#meaningOfLife = 42;
+    }
+
+    returnMeaningOfLife() {
+        return this.#meaningOfLife;
+    }
+
+    #returnAMessage() {
+        return "You will do great things in life";
+    }
+}
+const myObject = new ObjectCreator("Parwinder");
+console.log(myObject.returnMeaningOfLife()); // 42
+console.log(myObject["#meaningOfLife"]); // undefined
+console.log(myObject.#meaningOfLife); // SyntaxError
+console.log(myObject.#returnAMessage); // SyntaxError
+```
+
+
+
+**Protected**
+
+The property will be read-only, and any object will inherit it from the class, but it will only be change-able from within the class itself.
+
+```java
+class NameGenerator {
+    _name;
+
+    constructor(name) {
+        this._name = name;
+    }
+
+    get name() {
+        return this._name;
+    }
+}
+
+let nameGenerator = new NameGenerator("John");
+console.log(`My name is ${nameGenerator.name}`); // My name is John
+nameGenerator.name = "Jane"; // Cannot assign to 'name' because it is a read-only property.
+```
 
 
 
@@ -1407,7 +1484,7 @@ We can then continue using the `Menu` module in the **order.js** file.
 
 
 
-###6 Named Exports
+### 6 Named Exports
 
 ES6 introduced a second common approach to export modules. In addition to `export default`, *named exports* allow us to export data through the use of variables.
 
@@ -1808,16 +1885,6 @@ As with the other GET and POST requests that you’ve been making, an `async` PO
 We still have the same structure of using `try` and `catch` as before. But, in the `fetch()` call, we now have to include an additional argument that contains more information like `method` and `body`. 
 
 We’ll be explaining the why’s and how’s of the boilerplate code for `async` POST requests in the next lesson.
-
-<img src="/Users/yuanjinshuai/Library/Application Support/typora-user-images/image-20210228102912306.png" alt="image-20210228102912306" style="zoom:50%;" />
-
-
-
-
-
-
-
-
 
 
 
