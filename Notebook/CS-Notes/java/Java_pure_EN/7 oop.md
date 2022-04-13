@@ -1842,7 +1842,7 @@ class Demo{
 
 
 
-## 13. 内部类
+## 13. 内部类 Inner class
 
 可以将一个类的定义放在另一个类的内部，这就是内部类。
 
@@ -1978,7 +1978,7 @@ public class TestOuter {
 
 
 
-#### 13.4 匿名内部类
+#### 13.4 匿名内部类 Anonymous inner class java
 
 ​		匿名内部类就是没有名字的内部类。
 
@@ -1986,18 +1986,41 @@ public class TestOuter {
 
 ​		但是使用匿名内部类有个前提条件：必须继承一个父类或者实现一个接口。
 
-```java
-        showHouse(new LianJIaHouse() { // LianJIaHouse() 是一个接口
-            @Override
-            public void address() {
-                System.out.println("南京。。。");
-            }
+​		匿名内部类可以转化为lamda表达式。
 
+        ```java
+        int[][] a = new int[2][2];
+        // 	Anonymous class
+        Arrays.sort(a, new Comparator<>(){
             @Override
-            public void price() {
-                System.out.println("七亿。。。");
+            public int compare(int[] o1, int[] o2) {
+                return o1[0] - o2[0];
             }
-        })
+        });
+        
+        //  Lambda Expression
+        Arrays.sort(a, (o1, o2) -> o1[0] - o2[0]);
+        ```
+
+
+
+
+
+```java
+showHouse(new LianJIaHouse() { // LianJIaHouse() 是一个接口
+    @Override
+    public void address() {
+        System.out.println("南京。。。");
+    }
+
+    @Override
+    public void price() {
+       System.out.println("七亿。。。");
+    }
+});
+
+// showHouse(匿名内部类 = new LianJIaHouse() {...});
+// LianJIaHouse是接口的名字，override后直接实例化的的对象是没有名字的
 ```
 
 ```java
@@ -2132,7 +2155,7 @@ public class Test {
 }
 ```
 
-​		注：在匿名类中不吭有命名构造器（因为根部不可能有名字！）但通过实例初始化，就能够达到为匿名对象传建一个构造器的效果。
+​		注：在匿名类中不有命名构造器（因为根部不可能有名字！）但通过实例初始化，就能够达到为匿名对象传建一个构造器的效果。
 
 ​				所以对于内部类而言，实例化初始化的实际效果就是构造器。当然它也受到了限制——你不能重载实例化方法，所以你仅有一个这样的构造器。
 

@@ -311,6 +311,10 @@ will push your branch up to the remote, `origin`. From there, Sally can review y
 
 
 
+## 4 commit
+
+if you don't want create a new commit, `git add . && git commit -amend --no-edit` or `git reset HEAD^`then commit
+
 **Normal command**
 
 

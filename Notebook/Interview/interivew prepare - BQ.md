@@ -64,8 +64,25 @@ I think that will remind me tasks to do and keep update with team and also know 
 
     Thirdly, I’m happy to work in an enviroment with a lot of challenges so that I’ll never be boring.
 
-4.  **Introduce yourself by someone others**
+4.  **Introduce yourself by third**
 
 ​	
 
-​	He is a talented student from saskatchewan polytechnic majored in software developer. Graduated from Beihang Univeristy with a master's degree in 2020, He has experience in Biadu and Gaotu as Software developer for almost 2 years. Having good understanding on software, he has great interest in back-end developer. He is familiar with Java, he has the ability to be a great team member and write efficient code. 
+
+
+
+
+# The Third-Party Introduction
+
+He will be a great fit for the software engineering position at our company. He did almost two years of a full-time job at Baidu and Gaotu as a Software developer. He has 3 years of software development experience, one year of them in data mining and machine learning fields. two years of them is backend developer. His current focus is on building a back-end web service. He experienced a full software development life cycle including requirement, system analysis, design, coding, testing, integration and maintenance. He is also familiar with common back-end frameworks and dev tools. He is curious about new possibilities and challenging things. He has received systematic training in software development in Canada, which show his great passion for software knowledge. He has a solid understanding of Java language and be good at data structure and algorithm. I believe he has the ability to be a great team member and write efficient code. 
+
+
+
+
+
+
+
+
+
+salesforcereferral365@gmail.com
+
