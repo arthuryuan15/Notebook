@@ -494,29 +494,60 @@ The key takeaway from the example above is to *avoid* using arrow functions when
 
 
 
-### 4 Privacy
+### 4 Modifiers
 
-Accessing and updating properties is fundamental in working with objects. However, there are cases in which we don’t want other code simply accessing and updating an object’s properties. When discussing *privacy* in objects, we define it as the idea that only certain properties should be mutable or able to change in value.
+public, private, protected
 
-Certain languages have privacy built-in for objects, but JavaScript does not have this feature. Rather, JavaScript developers follow naming conventions that signal to other developers how to interact with a property. ==One common convention is to place an underscore `_` before the name of a property to mean that the property should not be altered.==Here’s an example of using `_` to prepend a property.
+By default, an object's methods are public in JavaScript.
+
+**private**
 
 ```javascript
-const bankAccount = {
-  _amount: 1000
+class ObjectCreator {
+    #meaningOfLife;
+
+    constructor(name) {
+        this.#meaningOfLife = 42;
+    }
+
+    returnMeaningOfLife() {
+        return this.#meaningOfLife;
+    }
+
+    #returnAMessage() {
+        return "You will do great things in life";
+    }
 }
+const myObject = new ObjectCreator("Parwinder");
+console.log(myObject.returnMeaningOfLife()); // 42
+console.log(myObject["#meaningOfLife"]); // undefined
+console.log(myObject.#meaningOfLife); // SyntaxError
+console.log(myObject.#returnAMessage); // SyntaxError
 ```
 
-In the example above, the `_amount` is not intended to be directly manipulated.
 
-Even so, it is still possible to reassign `_amount`:
 
-```javascript
-bankAccount._amount = 1000000;
+**Protected**
+
+The property will be read-only, and any object will inherit it from the class, but it will only be change-able from within the class itself.
+
+```java
+class NameGenerator {
+    _name;
+
+    constructor(name) {
+        this._name = name;
+    }
+
+    get name() {
+        return this._name;
+    }
+}
+
+let nameGenerator = new NameGenerator("John");
+console.log(`My name is ${nameGenerator.name}`); // My name is John
+nameGenerator.name = "Jane"; // Cannot assign to 'name' because it is a read-only property.
 ```
-
-In later exercises, we’ll cover the use of methods called *getters* and *setters*. Both methods are used to respect the intention of properties prepended, or began, with `_`. Getters can return the value of internal properties and setters can safely reassign property values. For now, let’s see what happens if we can change properties that don’t have setters or getters.
-
-
 
 
 
@@ -1242,61 +1273,6 @@ tyson.generateName(); // TypeError
 ```
 
 Note: for variable, same as method
-
-### 13 Modifiers
-
-public, private, protected
-
-By default, an object's methods are public in JavaScript.
-
-**private**
-
-```javascript
-class ObjectCreator {
-    #meaningOfLife;
-
-    constructor(name) {
-        this.#meaningOfLife = 42;
-    }
-
-    returnMeaningOfLife() {
-        return this.#meaningOfLife;
-    }
-
-    #returnAMessage() {
-        return "You will do great things in life";
-    }
-}
-const myObject = new ObjectCreator("Parwinder");
-console.log(myObject.returnMeaningOfLife()); // 42
-console.log(myObject["#meaningOfLife"]); // undefined
-console.log(myObject.#meaningOfLife); // SyntaxError
-console.log(myObject.#returnAMessage); // SyntaxError
-```
-
-
-
-**Protected**
-
-The property will be read-only, and any object will inherit it from the class, but it will only be change-able from within the class itself.
-
-```java
-class NameGenerator {
-    _name;
-
-    constructor(name) {
-        this._name = name;
-    }
-
-    get name() {
-        return this._name;
-    }
-}
-
-let nameGenerator = new NameGenerator("John");
-console.log(`My name is ${nameGenerator.name}`); // My name is John
-nameGenerator.name = "Jane"; // Cannot assign to 'name' because it is a read-only property.
-```
 
 
 
