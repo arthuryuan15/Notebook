@@ -1,9 +1,31 @@
-# learn Javascript
+# learn JavaScript
 https://www.codecademy.com/learn/introduction-to-javascript
 
 https://learning.oreilly.com/library/view/javascript-novice-to/9781492023623/Text/ch1.html#programming
 
 ## 1 Introduction
+
+**Primitive Data Types**
+
+- String
+- Symbol
+- Number
+- Boolean
+- Undefined
+- Null
+
+**Variable **
+
+In versions of JavaScript previous to ES6, variables were declared using the keyword `var`
+
+The main difference was that variables declared using `let` and `const` have block scope
+
+
+
+
+
+
+
 ## 2 Conditionals
 
 Review
@@ -11,14 +33,34 @@ Review
 Way to go! Here are some of the major concepts for conditionals:
 
 - An `if` statement checks a condition and will execute a task if that condition evaluates to `true`.
+
 - `if...else` statements make binary decisions and execute different code blocks based on a provided condition.
+
 - We can add more conditions using `else if` statements.
+
 - Comparison operators, including `<`, `>`, `<=`, `>=`, `===`, and `!==` can compare two values.
+
+  * `==` in JavaScript is used for comparing two variables, but it ignores the datatype of variable
+
+  *  `===` is used for comparing two variables, but this operator also **checks datatype** and compares two values.
+
+  https://bit.ly/3uppRqJ
+
+  
+
 - The logical and operator, `&&`, or “and”, checks if both provided expressions are truthy.
+
 - The logical operator `||`, or “or”, checks if either provided expression is truthy.
+
 - The bang operator, `!`, switches the truthiness and falsiness of a value.
+
 - The ternary operator is shorthand to simplify concise `if...else` statements.
+
 - A `switch` statement can be used to simplify the process of writing multiple `else if` statements. The `break` keyword stops the remaining `case`s from being checked and executed in a `switch` statement.
+
+
+
+
 
 
 
@@ -66,11 +108,28 @@ Way to go! Here are some of the major concepts for conditionals:
   }
   ```
 
-##4 Scope
+## 4 Scope
 
-global scope
+Always use let instead of var , Because let used **only in the block it’s defined in**
 
-local scope
+
+
+```java
+for(let i = 1; i <= 3; i++){
+    console.log(i);
+}
+i++; // i is not define
+console.log(i);
+
+for(var i = 1; i <= 3; i++){
+    console.log(i);// 1\n 2\n 3\n
+}
+console.log(i); // 4
+```
+
+
+
+
 
 ## 5 String
 
@@ -435,29 +494,60 @@ The key takeaway from the example above is to *avoid* using arrow functions when
 
 
 
-### 4 Privacy
+### 4 Modifiers
 
-Accessing and updating properties is fundamental in working with objects. However, there are cases in which we don’t want other code simply accessing and updating an object’s properties. When discussing *privacy* in objects, we define it as the idea that only certain properties should be mutable or able to change in value.
+public, private, protected
 
-Certain languages have privacy built-in for objects, but JavaScript does not have this feature. Rather, JavaScript developers follow naming conventions that signal to other developers how to interact with a property. ==One common convention is to place an underscore `_` before the name of a property to mean that the property should not be altered.==Here’s an example of using `_` to prepend a property.
+By default, an object's methods are public in JavaScript.
+
+**private**
 
 ```javascript
-const bankAccount = {
-  _amount: 1000
+class ObjectCreator {
+    #meaningOfLife;
+
+    constructor(name) {
+        this.#meaningOfLife = 42;
+    }
+
+    returnMeaningOfLife() {
+        return this.#meaningOfLife;
+    }
+
+    #returnAMessage() {
+        return "You will do great things in life";
+    }
 }
+const myObject = new ObjectCreator("Parwinder");
+console.log(myObject.returnMeaningOfLife()); // 42
+console.log(myObject["#meaningOfLife"]); // undefined
+console.log(myObject.#meaningOfLife); // SyntaxError
+console.log(myObject.#returnAMessage); // SyntaxError
 ```
 
-In the example above, the `_amount` is not intended to be directly manipulated.
 
-Even so, it is still possible to reassign `_amount`:
 
-```javascript
-bankAccount._amount = 1000000;
+**Protected**
+
+The property will be read-only, and any object will inherit it from the class, but it will only be change-able from within the class itself.
+
+```java
+class NameGenerator {
+    _name;
+
+    constructor(name) {
+        this._name = name;
+    }
+
+    get name() {
+        return this._name;
+    }
+}
+
+let nameGenerator = new NameGenerator("John");
+console.log(`My name is ${nameGenerator.name}`); // My name is John
+nameGenerator.name = "Jane"; // Cannot assign to 'name' because it is a read-only property.
 ```
-
-In later exercises, we’ll cover the use of methods called *getters* and *setters*. Both methods are used to respect the intention of properties prepended, or began, with `_`. Getters can return the value of internal properties and setters can safely reassign property values. For now, let’s see what happens if we can change properties that don’t have setters or getters.
-
-
 
 
 
@@ -666,9 +756,9 @@ Note: You will see errors as you work through this exercise, but by the end the 
 
 ## 9 Classes
 
-### 1 Introduction to Classes
+https://learning.oreilly.com/library/view/javascript-novice-to/9781492023623/Text/ch12.html#object-oriented-programming
 
-JavaScript is an *object-oriented programming* (OOP) language we can use to model real-world items. In this lesson, you will learn how to make *classes*. Classes are a tool that developers use to quickly produce similar objects.
+### 1 Introduction to Classes
 
 Take, for example, an object representing a dog named `halley`. This dog’s `name` (a key) is `"Halley"` (a value) and has an `age` (another key) of `3` (another value). We create the `halley` object below:
 
@@ -691,6 +781,8 @@ let halley = {
 }
 ```
 
+
+
 Now, imagine you own a dog daycare and want to create a catalog of all the dogs who belong to the daycare. Instead of using the syntax above for every dog that joins the daycare, we can create a `Dog` class that serves as a template for creating new `Dog` objects. For each new dog, you can provide a value for their name.
 
 As you can see, classes are a great way to reduce duplicate code and debugging time.
@@ -699,7 +791,7 @@ After we lay the foundation for classes in the first few exercises, we will intr
 
 
 
-###3 Constructor
+### 3 Constructor
 
 In the last exercise, you created a class called `Dog`, and used it to produce a `Dog` object.
 
@@ -828,7 +920,7 @@ In the example above, we create two new `Dog` instances, `nikko` and `bradford`.
 
 ### 7 Inheritance I
 
-Imagine our doggy daycare is so successful that we decide to expand the business and open a kitty daycare. Before the daycare opens, we need to create a `Cat` class so we can quickly generate `Cat` instances. We know that the properties in our `Cat` class (`name`, `behavior`) are similar to the properties in our `Dog`class, though, there will be some differences, because of course, cats are not dogs. 
+Imagine our doggy daycare is so successful that we decide to expand the business and open a kitty daycare. Before the daycare opens, we need to create a `Cat` class so we can quickly generate `Cat` instances. We know that the properties in our `Cat` class (`name`, behavior) are similar to the properties in our `Dog`class, though, there will be some differences, because of course, cats are not dogs. 
 
 Let’s say that our `Cat` class looks like this:
 
@@ -1075,7 +1167,7 @@ The correct answer is `1`. But why?
 
 
 
-###11 nheritance V
+### 11 Inheritance V
 
 In addition to the inherited features, child classes can contain their own properties, getters, setters, and methods. 
 
@@ -1144,13 +1236,9 @@ Now that we’ve abstracted animal daycare features, it’s easy to see how you 
 
 
 
-###12 Static Methods
+### 12 Static
 
-Sometimes you will want a class to have methods that aren’t available in individual instances, but that you can call directly from the class. 
-
-Take the `Date` class, for example — you can both create `Date` instances to represent whatever date you want, and call *static* methods, like `Date.now()` which returns the current date, directly from the class. The `.now()` method is static, so you can call it directly from the class, but not from an instance of the class. 
-
-Let’s see how to use the `static` keyword to create a static method called `generateName` method in our `Animal` class:
+A static method is called by the class directly rather than by instances of the class. Static methods are not available to instances of the class.
 
 ```javascript
 class Animal {
@@ -1158,6 +1246,8 @@ class Animal {
     this._name = name;
     this._behavior = 0;
   }
+    
+  static age = 10; 
  
   static generateName() {
     const names = ['Angel', 'Spike', 'Buffy', 'Willow', 'Tara'];
@@ -1182,7 +1272,7 @@ const tyson = new Animal('Tyson');
 tyson.generateName(); // TypeError
 ```
 
-The example above will result in an error, because you cannot call static methods (`.generateName()`) on an instance (`tyson`).
+Note: for variable, same as method
 
 
 
@@ -1370,7 +1460,7 @@ We can then continue using the `Menu` module in the **order.js** file.
 
 
 
-###6 Named Exports
+### 6 Named Exports
 
 ES6 introduced a second common approach to export modules. In addition to `export default`, *named exports* allow us to export data through the use of variables.
 
@@ -1771,16 +1861,6 @@ As with the other GET and POST requests that you’ve been making, an `async` PO
 We still have the same structure of using `try` and `catch` as before. But, in the `fetch()` call, we now have to include an additional argument that contains more information like `method` and `body`. 
 
 We’ll be explaining the why’s and how’s of the boilerplate code for `async` POST requests in the next lesson.
-
-<img src="/Users/yuanjinshuai/Library/Application Support/typora-user-images/image-20210228102912306.png" alt="image-20210228102912306" style="zoom:50%;" />
-
-
-
-
-
-
-
-
 
 
 
