@@ -1061,7 +1061,11 @@ list.contains() => O(n)
 
 
 
-## 14 binary reprsentation
+`StringBuilder.delete(stIdx, edIdx)` will be better then `res.substring(0, stIdx - 1) + res.substring(edIx)` when res.length >>= edIdx - stIdx
+
+
+
+# 14 binary reprsentation
 
 ```java
 Integer.toBinaryString(int i);
