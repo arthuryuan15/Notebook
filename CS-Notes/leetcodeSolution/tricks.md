@@ -1021,7 +1021,7 @@ System.out.println(list);
         }
 
         @Override
-        public int hashCode() {
+        public int hashCode() { // change also
             return Objects.hash(x, y);
         }
     }
