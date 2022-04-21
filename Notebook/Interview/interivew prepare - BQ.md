@@ -1,4 +1,16 @@
-**1 my atttitude towards diligence and strive ?****
+guidewire 
+
+>   3 Tell me about your work experiences.
+>
+>   8 Come up with two or three reasons you want to work for the company
+>
+>   
+
+
+
+
+
+**1 my atttitude towards diligence and strive ?**
 
 ​	working hard is way to achieve the things, I am enjoy the challenge things, because that will not be boring. After making great effort to finish a things, I will feel the achievement.
 
@@ -12,7 +24,7 @@ communication is important, because that will let you in right direction.
 
 Divide big problem into some small parts, and sloved small parts one by one.
 
-**3 Tell me about your work experiences.**
+## **3 Tell me about your work experiences.**
 
 My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as software developer in China. I will graduate in saskatchewan polytechnic June 2022.
 
@@ -25,6 +37,8 @@ I Delivered different notifications for different course types based on Kafka.
 In Baidu.
 
 Built the code check tool and deployed it on CI(*Continuous integration*) for a test environment in which the tool will check all submitted code is suitable for the change specification and notice via email. Improved the efficiency of testing, effectively intercepting more than 10 bugs in a month. 
+
+
 
 **4 asked to describe an experience when I found myself wrong?**
 
@@ -42,43 +56,61 @@ I think that will remind me tasks to do and keep update with team and also know 
 
 
 
-1.  **Open words**
+**7 Open words**
 
-    Thanks you for giving me the opportunity to interview today.
-
-2.  **Come up with two or three reasons you want to work for the company**
-
-    [Desrcibe company] products, so many talent engineers are working here, building increadiable things.
-
-    [Describe yourself] I’m a person who respect hard working and care a lot about customer experience, so that’s why huawei culture attract me a lot.
-
-    Therefore, this a place where I can learn a lot, and use my skills and experience to make things happend with team.
-
-3.  **Why you choose this position?**
-
-    The job I have applied is SDE, I am interested in this position because.
-
-    Firstly, new technologies to create new things.
-
-    Secondly, I can understand problems and figure the better solution.
-
-    Thirdly, I’m happy to work in an enviroment with a lot of challenges so that I’ll never be boring.
-
-4.  **Introduce yourself by third**
-
-​	
+Thanks you for giving me the opportunity to interview today.
 
 
 
+##  **8 Come up with two or three reasons you want to work for the company**
+
+Guidewire is a professional insurance software company, focuing on providing software services for P&C (property & casualty) insurance companies. Guidewire's products have a high market share in world, especailly in North America and Europe.
+
+[Desrcibe company] [products], so many talent engineers are working here, building increadiable things.
+
+[Describe yourself] I’m a person who respect hard working and care a lot about customer experience, so that’s why [company name]culture attract me a lot.
+
+Therefore, this a place where I can learn a lot, and use my skills and experience to make things happend with team.
 
 
-# The Third-Party Introduction
+
+**9 Why you choose this position?**
+
+The job I have applied is SDE, I am interested in this position because.
+
+Firstly, new technologies to create new things.
+
+Secondly, I can understand problems and figure the better solution.
+
+Thirdly, I’m happy to work in an enviroment with a lot of challenges so that I’ll never be boring.
+
+
+
+# **10 expected salary**
+
+60,000( sixty thousand)
+
+
+
+# **11 why you choose cs?**
+
+Because my roommate in undergrandate, he was a computer lover. I was affected by him, after that I start to some basic concept of computer, I thought it's too fancy, after learning computer sciecne after those years, I think computers are good fit for me, I am very interested in solving problems with programming and I always find good solution, in college and at work.
+
+So learing software developing will help me to develop critical thinking, programming skill. those skills can slove problems.
+
+
+
+**12 Introduce yourself by third**
 
 He will be a great fit for the software engineering position at our company. He did almost two years of a full-time job at Baidu and Gaotu as a Software developer. He has 3 years of software development experience, one year of them in data mining and machine learning fields. two years of them is backend developer. His current focus is on building a back-end web service. He experienced a full software development life cycle including requirement, system analysis, design, coding, testing, integration and maintenance. He is also familiar with common back-end frameworks and dev tools. He is curious about new possibilities and challenging things. He has received systematic training in software development in Canada, which show his great passion for software knowledge. He has a solid understanding of Java language and be good at data structure and algorithm. I believe he has the ability to be a great team member and write efficient code. 
 
 
 
+# **13 ask interview**
 
+1.   What is the main responsibility of the position? or What's prodcut this position will do?
+2.   What training programs are available to your employees?
+3.   What will you expect from me during the first day, first week, and first month of employment?
 
 
 
