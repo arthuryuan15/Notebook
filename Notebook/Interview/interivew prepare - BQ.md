@@ -3,8 +3,6 @@ guidewire
 >   3 Tell me about your work experiences.
 >
 >   8 Come up with two or three reasons you want to work for the company
->
->   
 
 
 
@@ -26,17 +24,15 @@ Divide big problem into some small parts, and sloved small parts one by one.
 
 ## **3 Tell me about your work experiences.**
 
-My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as software developer in China. I will graduate in saskatchewan polytechnic June 2022.
+My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as a software developer in China. 
 
-In Gaotum.
+ In GAOTU.  
 
- I Delivered some new features about homework. Including clock-in setting time and reminder tasks, comments and likes of clock-in assignments, etc.
+My primary responsibility is to develop an online teaching platform.  I delivered new features on this platform for homework with three backend developers and three front-end developers, including clock-in setting time and reminder tasks, comments and likes etc., which enhanced the 20% user retention rate.  I also delivered notifications for different types of courses based on Kafka. 
 
-I Delivered different notifications for different course types based on Kafka.
+ In Baidu. 
 
-In Baidu.
-
-Built the code check tool and deployed it on CI(*Continuous integration*) for a test environment in which the tool will check all submitted code is suitable for the change specification and notice via email. Improved the efficiency of testing, effectively intercepting more than 10 bugs in a month. 
+My primary responsibility is to develop automated test solutions for the systems.  I created a code check tool and deployed it on a test pipeline.  The code check tool will check all submitted code is suitable for the specific rules.  If not, it will send a notification by email.  After developing these tools on the test pipeline, this tool found ten problems in the code in a month.
 
 
 
@@ -113,6 +109,8 @@ He will be a great fit for the software engineering position at our company. He 
 3.   What will you expect from me during the first day, first week, and first month of employment?
 
 
+
+Zoom live java binary tree and data stru microserive
 
 
 
