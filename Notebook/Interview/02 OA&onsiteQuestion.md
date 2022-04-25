@@ -1,5 +1,431 @@
 
 
+## guideware
+
+2014
+
+1.   interface, abstract in Java 
+2.    蜗牛爬井设计类和方法
+3.   recursion，map
+4.   volatile 是什么
+5.   设计一个chess game。 然后还有一个就是实现一个**HashMap**。。。注意初始大小， put() and get()
+6.   一串概念问题 map set tree list array iterator 反正这些基本的数据结构都要知道
+     然后abstract interface 区别应用
+     秒完这些一题智力题 蜗牛爬井 爬三米掉两米 问你几天可以爬出去
+     然后针对这题进行OOD
+7.   我面了第二轮。。。设计一个chess game， 还有就是implement a hashmap, 主要讲push() 和delete()
+
+2014
+
+1.   Can interfaces have variables?
+2.   Let's talk about hashing. Do you know what is linear hashing?
+3.   How about chain hashing?
+4.   Let us discuss about snail in a well? two classes. the well has the snail. the property is ..... the action is .
+5.    iterator need hasnext and next
+
+2014
+
+1.    implement hashmap, 最好是generic的了。 不过好像其实无所谓吧。。,enerice也不难啦。还有就是实现的method，大概就是put, get, remove,yes。 其实就是put 和get。 好像没说remove。 考虑一下collision就行，
+2.    poker game， 然后判断五张牌的组合。。
+3.    power set
+4.    travel‘s men
+5.   junit， 你最好还是稍微懂点， 这样不会慌。 虽然不需要写junit把。
+6.   什么interface 啊， 什么volatile， thread， runnable。。 我大概记得是这些，还有static， 都问了。。 
+
+
+
+2022
+
+1.   第一题iteraotor implementation, 
+2.   第二题n-tree getNthLevel, getLeafNodes.
+
+
+
+2021
+
+1.   java: volatile, annotation, interface, 事务,modifier.
+2.   如何设计一个聊天室，讲一下大概模块有哪些，数据库如何设计。记得了解一下websocket
+
+
+
+2021
+
+1.   两个人各有一个schedule，就是哪一天在哪个城市出差。 两个人需要拿一天出来一起吃饭。求哪一天一起吃饭时，走的路最少。 有3种情况。
+     1) 两个人正好在同一个城市，就是最优解。
+     2) 两个人在相邻的城市，其中有一个人走到另一个人的城市就行了。
+     3)两个人有共同的相邻城市，两个人都要走到共同的邻居城市才行。
+     给的schedule 并不是每个人每天都有空。我在这个上面花了些时间，因为不熟悉项目的相关类。解法就是，首先生成一个HashMap<哪一天, 两个人各自在哪个城市的列表>。这个map的value可能只有一个值，可能有两个值。我们只拿有两个值的(就是代表两个人在当天都是available的)。然后比较城市和距离就行了。
+2. 实现一个钱包。钱包有支‍‍‌‍‌‍‍‌‍‍‌‌‌‍‍‍‌‌‍‌持5种美分Penny, Nickel, Dime, Quater, Half_Dollar. 要实现的功能有增加/减少某种钱币。统计总共多少钱。统计总的钱币数量。然后就是把零钱换成整的钱。比如5个penny 换成1个nickel. 这里我就是因为不了解美分的兑换走错了路， Dime 和quater并不能1:N互换。 因此好的做法就是用总量减去Hafl_dollar的数量，再减quater的数量，再减Dime的数量。
+
+
+
+2021
+
+```
+第一题是关于写一个license plate 的iterator. 之前也有人发过，但是好像没人给出详细的代码。
+输入Iterator<String> platenumbers, 里面包含了很多错误的牌照号，遇到错误的Licenseplate构造函数会抛出异常，因此外面初始化的时候需要抓异常。
+输出是一个一个的合法校验过的Liscenseplate类.
+代码如下:
+import java.util.*;
+// import java.lang.Exception;
+class Licenseplate{
+    enum STATE {CA,NY,NJ,WA,PA};
+    private String content = "";
+    private static HashSet<String> statesSet = new HashSet<String>();
+    static{
+        for(STATE state : STATE.values()){
+            statesSet.add(state.name());
+        }
+    }
+    public Licenseplate(String input) throws Exception {
+        /*
+            wrong: 'CA123456 ', 'CC123456', 'CCC23456', 'CA123 46'
+        */
+        //check len of input, 8
+        if (input == null || input.length() != 8){
+            throw new Exception("Wrong input len:" + input);
+        }
+        //check first two chars. in table.
+        if(!statesSet.contains(input.substring(0,2))){
+            throw new Exception("Wrong input state:" + input);
+        }
+        //check the later 6 digits.
+        for(int i = 2; i < input.length(); i++){
+            if(!('0'<= input.charAt(i) && input.charAt(i) <= '9')){
+                throw new Exception("Wrong input numbers:" + input);
+            }
+        }
+        content = input;
+    }
+    public String toString(){
+        return content;
+    }
+    static class LicenseplateIterator implements Iterator<Licenseplate>{
+        private Iterator<String> iterator = null;
+        private Licenseplate next = null;
+        private void prepareNext(){
+            next = null;
+            while(iterator.hasNext()){
+                try{
+                    Licenseplate lp = new Licenseplate(iterator.next());
+                    next = lp;
+                    break;
+                }catch(Exception e){
+                    System.out.println(e);
+                }
+            }
+        }
+        public LicenseplateIterator(Iterator<String> iterator){
+            // store the iterator
+            this.iterator = iterator; //todo if it's null
+            //prepare the next element
+            prepareNext();
+        }
+        public Licenseplate next() {
+            Licenseplate lp = next;
+            //prepare the next of next element
+            prepareNext();
+       ‍‍‌‍‌‍‍‌‍‍‌‌‌‍‍‍‌‌‍‌     //return the next element
+            return lp;
+        }
+        public boolean hasNext() {
+            //check if has next
+            return next != null;
+        }
+    }
+}
+第二题是遍历N-arr Tree.
+第一个子问是用BFS遍历第n层的所有节点。 蠡口 司二久
+第二个自问是用DFS递归调用自己，获取所有叶节点。蠡口 三流流的简化版。 就取最外面一层叶节点。
+```
+
+
+
+2021
+
+1.   设计iterator那个
+
+
+
+2020
+
+```java
+视频面试是写一个iterator，关于licenseplate的，求出给出的licenseplate是否合法，比如：CA123456, 这是一个合法牌照（2 char state + 6 digits），注意constuctor有判定valid与否的功能。
+具体class and APIs如下：
+class Licenseplate {
+    enum STATE {
+        CA,
+        NY,
+        NJ,
+        WA,
+        PA
+    }
+    public Licenseplate(String input) {
+    }
+    static class LicenseplateIterator implements Iterator<Licenseplate> {
+        public LicenseplateIterator(Iterator<String> iterator) {‍‍‌‌‍‌‍‌‌‌‌‍‍‍‌‌‍‌‍‌
+        }
+        public boolean hasNext() {
+        }
+        public Licenseplate next() {
+        }
+    }
+}
+
+```
+
+Task.zip
+
+2019
+
+private class，什么是多线程的raise，hashmap的
+
+前天做的OA，题目和这个帖子说的一样https://www.1point3acres.com/bbs ... highlight=Guidewire
+第二题是maximum subarray II的变种，不同的是给定了两个subarray的长度，一个是K， 一个是L
+https://www.jiuzhang.com/solution/maximum-subarray-ii/
+
+
+
+2018
+
+内推guidewire，收到布兰特老爷爷电话，老爷爷虽然是hr但是会问很多java的基础，hashmap，access modifier，多线程什么的。没多久收到店面，是个波兰小哥
+给一个licenseplate class，有enum州名和车牌号，纯数字，
+给你一个string iterator，string是plate，然后让你实现一个plate的iterator
+其中州名不在enum里面的string在next的时候需要跳过
+hasnext的时候也要跳过，就是说如果后面全是invalid州名的车牌你要return false
+第二个就是简单的树，实现两个方法，返回n层的全部node和返回全部叶子
+花了老子四十分钟做第一个题，主要是iterator不大熟悉
+
+
+
+2018
+
+题目： license plate
+Inputs: 1）给了你一个StringIterator, StringIterator可以调用hasNext 和 next方法, next方法会返回一个车牌字符串例如"NY1234, CA5678, ZZ000", 注意 ZZ000是Invalid车牌，因为valid的州缩写只有6个，我们之后会将如何处理他
+            2）给你个LicensePlate的类，构造函数参数是字符串，例如"CA5678"， 实例化LicensePlate时如果字符串是Invalid，会抛出错误，这个类可以用来做州的validation
+Tasks:  我们要写的是一个叫LicensePlateIterator, 构造函数已经定义好了，参数就是一个StringIterator, 我们需要实现LicensePlateIterator里的 next 和 hasNext方法
+            1 hasNext 返回是否还有下一个valid LicensePlate object可以被返回
+            2 next 返回下一个valid LicensePlate object 或者 null， 要注意的是这个方法会跳过所有Invalid的车牌
+讲下我最后的思路吧，定义一个全局变量 nextPlate, 在hasNext里不断循环调用StringIterator.next来创建LicensePlate对象并把值赋给nextPlate, 直到nextPlate非null或者StringIterator返回false, LicensePlateIterator.hasNext就完成了找下个valid Plate object的任务，这样在Licens‍‍‌‍‌‍‍‌‍‍‍‍‌‌‌‍‍‍‌‌ePlateIterator.next方法里只需要看下这个nextPlate是否为null, 是的话重新调用一下LicensePlateIterator.hasNext, 不是的话恭喜你，reset一下nextPlate变量后返回值就好了。
+这应该不是最优解，面试官也没说是，前二十分钟楼主一直把重点放在LicensePlateIterator.next方法上饶了很大一个圈。代码写了快40分钟，当时感觉就是肯定跪了，不说第二题还没开始，测试都没跑呢。个人感觉还是自己太鱼了，工作了快两年写个Iterator还这么卡，这题相对于算法的难度
+也就Easy偏medium的难度吧。
+第一次在地理发面经，祝大家找工作顺利，共勉。
+
+
+
+2015 
+
+1.   之后就开始问 HashMap 的细节，包括 put(key,value), get(key), hash function, initial capacity, load factor, hashing collision
+2.   题目跟 iterator of iterator 很像，需要 implement hasNext()和 Next()并过 test case。用 arrayList 写完之后在提醒下讲了优化的思路，但是没有来得及写。。于是挂了
+
+
+
+2015
+
+1.   对HashMap的理解，问了好多细节问题，另一个是OOD，设计chess
+
+
+
+2015
+
+1.   Junit test for poker game
+2.   complete some functions in the project for determining two persons' meeting day and place given schedule and citymap.
+3.   subset[color=#444‍‍‌‍‌‍‍‌‍‍‍‍‌‌‌‍‍‍‌‌444]
+
+2015
+
+1.   what's the difference between interface and abstact?
+2. what's recursion?
+3.what's transient?
+4. what's volatile?
+4. [f‍‍‌‍‌‍‍‌‍‍‌‌‌‍‍‍‍‍‌‌ont=Tahoma,]1. implement hashtable
+4. design chess game
+
+
+
+2015
+
+1.   解释一下interface以及其内部结构；interface里面是否可以有变量和常量？那这些变量和常量都有什么性质？（接口内部全是public）；
+2.   HashTable和HashMap对于处理collision的机制
+3.   Recursion的含义，举个例子，以及什么情况下停止（到底层的base case）；
+4.   for loop和for-each loop的区别
+5.   数据库的left-outer join的定义；
+6.   Java里Generics的定义：
+7.   就是那个蜗牛的题了。“10米的枯井，一只蜗牛从井底往上爬，白天往上爬3 feet，晚上往下掉2 feet，问需要几天爬到枯井？”而且问这个问题的时候他直接说：“Please just tell me if you already heard of this question before.”这时候当然是说“好像听过但是没仔细思考过”然后故作思考状再给出答案；
+8.   abstract class和interface的区别
+9.   What is Volatile keyword in Java?
+10.   Chess Game OOD‍‍
+11.   ‌‍‌‍‍‌‍‍‍‍‌‌‍‌‌‌‌‍Implement a HashTable
+
+
+
+2015
+
+1.   问题大概就是什么Interface啦，如何解决Hashtable里面的collision啦，迭代器里面有什么methods啦，什么是Recurision啦
+
+
+
+2015
+
+1. Poker Game，同花顺，三对，两对，没对子等等情况，写比大小的comparator类实现。很多代码都已经写好了，只需要填关键function就行了，有test case给你看，已test case能不能过为标准。
+
+2. Power Set，也就是subset。用三种方法解决：1）dfs；2）bfs；3）bitMap
+
+    subset，用bfs做就是这：
+    {1，2，3}
+    第一层：{}
+    第二层：{} | {1}
+    第三层：{} {1} | {2} {1, 2}
+    第四层：{} {1} {2} {1, 2} | {3} {1, 3} {2, 3} {1, 2, 3}
+
+3. Traveling Sales People
+
+4. 第二轮不是coding啊，问了hashmap，只需要动动嘴皮子就可以了~如果你是remote，那么就有第三轮，是实现iterator of iterator
+
+    
+
+2015
+
+1.   1.解释一下interface以及其内部结构；interface里面是否可以有变量和常量？那这些变量和常量都有什么性质？（接口内部全是public）；
+     2.HashTable和HashMap对于处理collision的机制
+     3.Recursion的含义，举个例子，以及什么情况下停止（到底层的base case）；
+     4.for loop和for-each loop的区别（for-each loop是用enumeration，而for loop是用index）；
+     5.数据库的left-outer join的定义；
+     6.Java里Generics的定义‍‍‌‍‌‍‍‌‍‍‍‍‌‌‌‍‍‍‌‌：（They allow "a type or method to operate on objects of various types while providing compile-time type safety."，答题重点在于“compile-time type safety”）
+     7.就是那个蜗牛的题了。“10米的枯井，一只蜗牛从井底往上爬，白天往上爬3 feet，晚上往下掉2 feet，问需要几天爬到枯井？”而且问这个问题的时候他直接说：“Please just tell me if you already heard of this question before.”这时候当然是说“好像听过但是没仔细思考过”然后故作思考状再给出答案；
+
+
+
+2014
+
+第一轮： 电话面试－－， 问了一大堆java的basic问题， 然后经典的蜗牛爬问题（白天爬3米，晚上掉2米， 什么时候爬出10米）， 最后设计蜗牛爬ood
+第二轮： implement hashmap， 设计chess game ood
+onsite： 第一轮－－》 poker game： 不好描述， 总之就是ide上机， 然后判断五张牌的组合。。吐槽，真的很无聊， code很多写好了。
+             第二轮 －－》 power set
+             第三轮 －－》 travel‘s men： 两个人从一个城市到另一个城市，每人每天只能最多移动一个城市， 找出最短距离‍‍‌‍‌‍‍‌‍‍‌‌‌‍‍‍‍‍‌‌。
+             第四轮 －－》 behavior
+
+才看到不好意思，就是这几道。主要是根据他已经写好的类继续补充函数。
+
+
+
+## Kijiji
+
+![image-20220424180149562](https://tva1.sinaimg.cn/large/e6c9d24egy1h1ln4f1seyj21770eo421.jpg)
+
+```java
+public class DocumentCounter {
+
+    public static abstract class AbstractDocumentCounter {
+        private int count = 0;
+        private int increment;
+
+        public AbstractDocumentCounter(int increment) {
+            this.increment = increment;
+        }
+
+        protected int getAndIncrement() {
+            this.count += this.increment;
+            return this.count;
+        }
+
+        public abstract String getNewDocumentName();
+    }
+
+    public static class DocumentNameCreator extends AbstractDocumentCounter {
+        private String prefix;
+
+        public DocumentNameCreator(int increment, String prefix) {
+            super(increment);
+            this.prefix = prefix;
+        }
+
+        public String getNewDocumentName() {
+            return prefix + getAndIncrement();
+        }
+    }
+}
+```
+
+![image-20220424180518294](https://tva1.sinaimg.cn/large/e6c9d24egy1h1ln814t7dj219d0axn0l.jpg)
+
+
+
+```java
+class RainStorm {
+    protected double eyeRadius;
+    protected double eyePositionX;
+    protected double eyePositionY;
+
+    public RainStorm(double eyeRadius, double eyePositionX, double eyePositionY) {
+        this.eyeRadius = eyeRadius;
+        this.eyePositionX = eyePositionX;
+        this.eyePositionY = eyePositionY;
+    }
+
+    public boolean isInEyeOfTheStorm(double positionX, double positionY) {
+        double distance = Math.sqrt(Math.pow(positionX - eyePositionX, 2) +
+                                    Math.pow(positionY - eyePositionY, 2));
+        return distance < eyeRadius;
+    }
+
+    public double amountOfRain() {
+        return eyeRadius * 20;
+    }
+    
+	public double getEyeRadius() {
+		return eyeRadius;
+	}
+
+	public double getEyePositionX() {
+		return eyePositionX;
+	}
+
+	public double getEyePositionY() {
+		return eyePositionY;
+	}
+}
+
+class SnowStorm {
+    
+    protected double eyeRadius;
+    protected double eyePositionX;
+    protected double eyePositionY;
+    private double amountOfSnow;
+
+    public SnowStorm(double eyeRadius, double eyePositionX, double eyePositionY, double amountOfSnow) {
+		this.eyeRadius = eyeRadius;
+		this.eyePositionX = eyePositionX;
+		this.eyePositionY = eyePositionY;
+		this.amountOfSnow = amountOfSnow;
+	}
+
+	public double getAmountOfSnow() {
+		return amountOfSnow;
+	}
+    
+	public boolean isInEyeOfTheStorm(double positionX, double positionY) {
+        double distance = Math.sqrt(Math.pow(positionX - eyePositionX, 2) +
+                                    Math.pow(positionY - eyePositionY, 2));
+        return distance < eyeRadius;
+    }
+
+	public double getEyeRadius() {
+		return eyeRadius;
+	}
+
+	public double getEyePositionX() {
+		return eyePositionX;
+	}
+
+	public double getEyePositionY() {
+		return eyePositionY;
+	}
+}
+```
+
+
+
 # bybit
 
 一轮
