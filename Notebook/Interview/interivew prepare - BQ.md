@@ -8,19 +8,19 @@ guidewire
 
 
 
-**1 my atttitude towards diligence and strive ?**
+**1 my attitude towards diligence and strive?**
 
-​	working hard is way to achieve the things, I am enjoy the challenge things, because that will not be boring. After making great effort to finish a things, I will feel the achievement.
+​	working hard is a way to achieve things, I am enjoying challenging things because they will not be boring. After making a great effort to finish things, I will feel the achievement.
 
 **2 What is the most challenging part of your last coop experience and how to overcome it.**
 
-​	The most challenging part of my previous experience is When I took on a project by ownself, I get a requirement form the my lead about code checking tool. I needed to check some code changed according a specific rules. Somebody did this before, but not successed, so I have no body to learn from. So I list what should I do, and figured out every steps. What I did is searching on Internet, asked some my colleauge who maybe know that, and kept update my process with my lead. I just did those repeatly. about a fews weeks I did it.
+​	The most challenging part of my previous experience is When I took on a project by myself, I get a requirement from my lead about a code checking tool. I needed to check some code changes according to specific rules. Somebody did this before but did not succeed, so I have nobody to learn from. So I list what should I do, and figured out every step. What I did is a search on Internet, asked some of my colleagues who maybe know that, and kept updating my process with my lead. I just did those repeatedly. about a few weeks I did it.
 
-What I learn from those experience 
+What I learn from those experiences 
 
-communication is important, because that will let you in right direction. 
+communication is important because that will let you in the right direction. 
 
-Divide big problem into some small parts, and sloved small parts one by one.
+Divide the big problem into some small parts, and solved small parts one by one.
 
 ## **3 Tell me about your work experiences.**
 
@@ -60,25 +60,25 @@ Thanks you for giving me the opportunity to interview today.
 
 ##  **8 Come up with two or three reasons you want to work for the company**
 
-Guidewire is a professional insurance software company, focuing on providing software services for P&C (property & casualty) insurance companies. Guidewire's products have a high market share in world, especailly in North America and Europe.
+The guidewire is a professional insurance software company, focusing on providing software services for P&C (property & casualty) insurance companies. Guidewire's products have a high market share in the world, especially in North America and Europe.
 
-[Desrcibe company] [products], so many talent engineers are working here, building increadiable things.
+[Desrcibe company] [products], so many talented engineers are working here, building incredible things.
 
-[Describe yourself] I’m a person who respect hard working and care a lot about customer experience, so that’s why [company name]culture attract me a lot.
+[Describe yourself] I’m a person who respects hard-working and cares a lot about customer experience, so that’s why [company name]culture attracts me a lot.
 
-Therefore, this a place where I can learn a lot, and use my skills and experience to make things happend with team.
+Therefore, this is a place where I can learn a lot, and use my skills and experience to make things happen with the team.
 
 
 
-**9 Why you choose this position?**
+**9 Why did  you choose this position?**
 
-The job I have applied is SDE, I am interested in this position because.
+The job I have applied for is SDE, I am interested in this position because.
 
 Firstly, new technologies to create new things.
 
-Secondly, I can understand problems and figure the better solution.
+Secondly, I can understand problems and figure out a better solutions.
 
-Thirdly, I’m happy to work in an enviroment with a lot of challenges so that I’ll never be boring.
+Thirdly, I’m happy to work in an environment with a lot of challenges so that I’ll never be boring.
 
 
 
