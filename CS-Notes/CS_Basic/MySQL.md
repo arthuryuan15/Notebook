@@ -34,7 +34,13 @@
 
 ​		这样每一片数据分散到不同的表或者库中，达 到了分布式的目的。 水平拆分可以支撑非常大的数据量。 水平拆分是指数据表行的拆分，表的行数超过200万 行时，就会变慢，这时可以把一张的表的数据拆成多张表来存放。举个例子：我们可以将用户信息表拆分成多 个用户信息表，这样就可以避免单一表数据量过大对性能造成影响。	
 
-## 3. 事务
+## 3. Transaction 事务
+
+​	*Transactions in Java*, as in general refer to a series of **actions** that must all complete successfully
+
+​	A *transaction* in sql is a unit of **work** that is performed in a database. 
+
+
 
 ​		mysql中，事务是一个**最小的不可分割的工作单元**。事务能保证一个业务的完整性。
 
@@ -188,6 +194,7 @@ Set transaction isolation level serializable;
  		串行化问题是，性能特差！！！
 
  
+
 
 
 

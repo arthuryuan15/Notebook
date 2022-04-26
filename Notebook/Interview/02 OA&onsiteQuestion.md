@@ -19,7 +19,7 @@
 2021
 
 1.   ~~两个人各有一个schedule，就是哪一天在哪个城市出差。 两个人需要拿一天出来一起吃饭。求哪一天一起吃饭时，走的路最少。 有3种情况。~~
-     
+  
      1)   两个人正好在同一个城市，就是最优解。
      
      2)   两个人在相邻的城市，其中有一个人走到另一个人的城市就行了。
@@ -164,7 +164,7 @@ Task.zip
 
 2019
 
-1.   private class，什么是多线程的raise，hashmap的
+1.   private class，什么是多线程的raise?，hashmap的
 
 前天做的OA，题目和这个帖子说的一样https://www.1point3acres.com/bbs ... highlight=Guidewire
 2. ~~第二题是maximum subarray II的变种，不同的是给定了两个subarray的长度，一个是K， 一个是L~~
@@ -231,8 +231,8 @@ Tasks:  我们要写的是一个叫LicensePlateIterator, 构造函数已经定�
 2015
 
 1.   what's the difference between interface and abstact?
-2. what's recursion?
-3.what's transient?
+2.   what's recursion?
+3.   what's transient?
 4. what's volatile?
 4. implement hashtable
 4. design chess game
