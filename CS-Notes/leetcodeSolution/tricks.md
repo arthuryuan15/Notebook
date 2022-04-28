@@ -257,6 +257,14 @@ int nums = {6, 2, 9, 1};
 System.out.println(Arrays.toString(arr)); // [6, 2, 9, 1]
 ```
 
+## 4.1 printf
+
+```java
+int d = 0;
+int k = 1;
+System.out.printf("d = %d, k = %d\n", d, k);
+```
+
 
 
 # 5 no { } in loop
@@ -377,8 +385,6 @@ Note: you can use **StringBuilder** and ouput String in a line as well
 
 
 # 10 Quick Reader
-
-
 
 ```java
     static class FastScanner {

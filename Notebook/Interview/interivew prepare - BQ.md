@@ -32,7 +32,7 @@ My primary responsibility is to develop an online teaching platform.  I delivere
 
  In Baidu. 
 
-My primary responsibility is to develop automated test solutions for the systems.  I created a code check tool and deployed it on a test pipeline.  The code check tool will check all submitted code is suitable for the specific rules.  If not, it will send a notification by email.  After developing these tools on the test pipeline, this tool found ten problems in the code in a month.
+My primary responsibility is to develop automated test solutions for the systems.  I created a code check tool and installed it on a test pipeline.  The code check tool will check all submitted code is suitable for the specific rules.  If not, it will send a notification by email.  After developing these tools on the test pipeline, this tool found ten problems in the code in a month.
 
 
 
