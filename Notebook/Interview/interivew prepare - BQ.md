@@ -8,27 +8,31 @@ guidewire
 
 
 
-**1 my attitude towards diligence and strive?**
+# 1 Personality
 
-​	working hard is a way to achieve things, I am enjoying challenging things because they will not be boring. After making a great effort to finish things, I will feel the achievement.
 
-**2 What is the most challenging part of your last coop experience and how to overcome it.**
 
-​	The most challenging part of my previous experience is When I took on a project by myself, I get a requirement from my lead about a code checking tool. I needed to check some code changes according to specific rules. Somebody did this before but did not succeed, so I have nobody to learn from. So I list what should I do, and figured out every step. What I did is a search on Internet, asked some of my colleagues who maybe know that, and kept updating my process with my lead. I just did those repeatedly. about a few weeks I did it.
+work hard: Working hard is a way to achieve things, I am enjoying challenging things because they will not be boring. After making a great effort to finish things, I will feel the achievement.
 
-What I learn from those experiences 
+Work smart: I will think diifferent condition before I start to code, if not, it will waste two much time, it's not good fot me and team.
 
-communication is important because that will let you in the right direction. 
+Energetic: I like running and basketball, I run for 5 kilometres 4 or 5 times a week. 
 
-Divide the big problem into some small parts, and solved small parts one by one.
 
-## **3 Tell me about your work experiences.**
+
+# 2  Challenge
+
+One time my supervisor needed me to develop a code checking tool without any support documents. I listed what I should do, did some research, and tried every possible solution. Sometimes I needed to ask some co-workers from another team. One of them asked me if I wanted to work with him, maybe because he had a good impression of me. (asked some detailed things) Within a very short period of time, the tool was successfully installed on the pipeline.	
+
+
+
+# 3 work experience
 
 My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as a software developer in China. 
 
  In GAOTU.  
 
-My primary responsibility is to develop an online teaching platform.  I delivered new features on this platform for homework with three backend developers and three front-end developers, including clock-in setting time and reminder tasks, comments and likes etc., which enhanced the 20% user retention rate.  I also delivered notifications for different types of courses based on Kafka. 
+My primary responsibility is to develop an online teaching platform.  I delivered new features on this platform about homework, including clock-in setting time and reminder tasks, comments and likes etc., which enhanced the 20% user retention rate.  I also delivered notifications for different types of courses based on Kafka. 
 
  In Baidu. 
 
@@ -36,15 +40,15 @@ My primary responsibility is to develop automated test solutions for the systems
 
 
 
-**4 asked to describe an experience when I found myself wrong?**
+# 4 asked to describe an experience when I found myself wrong?
 
 I though I can check all the changed file in a commit for code check tools, however the particular rule will effect only a particular files, I didn't need to all files, What need to do is check a few things, that will help me a lot and save my time. 
 
-**5 How can I contribute to my future team?**
+# 5 How can I contribute to my future team?
 
 
 
-**6 How do you influence people?**
+# 6 How do you influence people?
 
 deliver result to my lead, that's will be very important, you know what,  I used to have standup meeting every morning. everybody need to describe what's gonna do this day.
 
@@ -52,13 +56,13 @@ I think that will remind me tasks to do and keep update with team and also know 
 
 
 
-**7 Open words**
+# 7 Open words
 
 Thanks you for giving me the opportunity to interview today.
 
 
 
-##  **8 Come up with two or three reasons you want to work for the company**
+#  8 Come up with two or three reasons you want to work for the company
 
 The guidewire is a professional insurance software company, focusing on providing software services for P&C (property & casualty) insurance companies. Guidewire's products have a high market share in the world, especially in North America and Europe.
 
@@ -70,7 +74,7 @@ Therefore, this is a place where I can learn a lot, and use my skills and experi
 
 
 
-**9 Why did  you choose this position?**
+# 9 choose this position/company
 
 The job I have applied for is SDE, I am interested in this position because.
 
@@ -82,7 +86,7 @@ Thirdly, I’m happy to work in an environment with a lot of challenges so that 
 
 
 
-# **10 expected salary**
+# 10 expected salary
 
 60,000( sixty thousand)
 
@@ -96,23 +100,33 @@ So learing software developing will help me to develop critical thinking, progra
 
 
 
-**12 Introduce yourself by third**
+# 12 Introduce yourself in third
 
-He will be a great fit for the software engineering position at our company. He did almost two years of a full-time job at Baidu and Gaotu as a Software developer. He has 3 years of software development experience, one year of them in data mining and machine learning fields. two years of them is backend developer. His current focus is on building a back-end web service. He experienced a full software development life cycle including requirement, system analysis, design, coding, testing, integration and maintenance. He is also familiar with common back-end frameworks and dev tools. He is curious about new possibilities and challenging things. He has received systematic training in software development in Canada, which show his great passion for software knowledge. He has a solid understanding of Java language and be good at data structure and algorithm. I believe he has the ability to be a great team member and write efficient code. 
-
-
-
-# **13 ask interview**
-
-1.   What is the main responsibility of the position? or What's prodcut this position will do?
-2.   What training programs are available to your employees?
-3.   What will you expect from me during the first day, first week, and first month of employment?
+He will be a great fit for the software engineering position at our company. He did almost two years of a full-time job at Baidu and Gaotu as a Software developer. He has 3 years of software development experience, one year of them in data mining and machine learning fields. two years of them is backend developer. His current focus is on building a back-end web service. He experienced a full software development life cycle including requirement, system analysis, design, coding, testing, integration and maintenance. He is also familiar with common back-end frameworks and dev tools. He is curious about new possibilities and challenging things. He has received systematic training in software development in Canada, which show his great passion for software knowledge. He has a solid understanding of Java language and is good at data structure and algorithms. I believe he has the ability to be a great team member and write efficient code. 
 
 
 
-Zoom live java binary tree and data stru microserive
+# 13 ask interviewer
+
+1.   What training programs are available to your employees?
+2.   what's the tech stack used in your team?
+3.   ~~How does one advance in the company?~~
 
 
 
-salesforcereferral365@gmail.com
+# 14 Environment
+
+I have worked in many types of environments and enjoyed learning new things from each. I would say that while I don’t prefer a particular environment, I really like working with people who are committed to getting things done and who are passionate about their work.
+
+
+
+
+
+**14 What was a time when you used a novel idea to solve a problem?**
+
+
+
+
+
+
 

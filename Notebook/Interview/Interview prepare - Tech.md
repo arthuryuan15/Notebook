@@ -1,4 +1,28 @@
-# interview prepare - tech
+
+
+项目经验
+
+Kafka redis
+
+Advertisers
+
+how to deal with conflict
+
+what is kafka?
+
+what's quality of the manager you want to wokr with?
+
+高读 如何处理？
+
+scrum sprint
+
+agile
+
+workshop
+
+
+
+#interview prepare - tech
 
 岗位职责：
 

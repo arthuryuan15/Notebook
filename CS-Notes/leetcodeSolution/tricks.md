@@ -314,13 +314,15 @@ public static int[][] copy(int[][] src) {
 }
 ```
 
-
+Note: two demension array use Array.copyOf or System.arraycopy will be shallow copy, because it will copy second demension by reference.
 
 ## 6.1 ArrayList copy
 
 ```java
 List<Integer> newList = new ArrayList<>(oldList);
 ```
+
+
 
 
 
@@ -1006,6 +1008,12 @@ System.out.println(list);
 ```
 
 ## set with two demension array
+
+
+
+`Set<List<Integer>>` will take `O(k)` where `k` is the size of the `List`, so you can still say lookup time will O(1) compare to the number of `List`
+
+
 
 ```java
     static Set<Point> set = new HashSet<>();

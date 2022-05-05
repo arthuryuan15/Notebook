@@ -200,6 +200,7 @@ Set transaction isolation level serializable;
 
 
 
+
 **隔离级别越高，性能越差**
 
 READ-UNCOMMITTED > READ-COMMITED > REPEATABLE-READ > SERIALIZABLE
