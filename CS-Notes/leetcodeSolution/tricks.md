@@ -1081,7 +1081,36 @@ list.contains() => O(n)
 
 # 14 binary reprsentation
 
+Integer to Binary
+
 ```java
 Integer.toBinaryString(int i);
 ```
+
+Binary to Integer
+
+```java
+System.out.println(Integer.parseInt("1010", 2)); // 10
+```
+
+
+
+BigInteger to Binary
+
+```java
+BigInteger res = new BigInteger("7");
+res.toString(2); // "111"
+```
+
+
+
+Binary to BigInteger
+
+```java
+BigInteger a = new BigInteger("101011", 2);
+```
+
+
+
+
 

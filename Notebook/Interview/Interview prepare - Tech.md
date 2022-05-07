@@ -1,5 +1,7 @@
 
 
+interview - kijiji
+
 项目经验
 
 Kafka redis
@@ -10,7 +12,7 @@ how to deal with conflict
 
 what is kafka?
 
-what's quality of the manager you want to wokr with?
+what's quality of the manager you want to work with?
 
 高读 如何处理？
 
@@ -20,7 +22,9 @@ agile
 
 workshop
 
+kafka regular configuration
 
+top K
 
 #interview prepare - tech
 

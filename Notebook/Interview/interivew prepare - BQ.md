@@ -88,7 +88,7 @@ Thirdly, I’m happy to work in an environment with a lot of challenges so that 
 
 # 10 expected salary
 
-60,000( sixty thousand)
+70,000( sixty thousand)
 
 
 
