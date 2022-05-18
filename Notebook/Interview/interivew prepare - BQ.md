@@ -32,7 +32,7 @@ My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as a software dev
 
  In GAOTU.  
 
-My primary responsibility is to develop an online teaching platform.  I delivered new features on this platform about homework, including clock-in setting time and reminder tasks, comments and likes etc., which enhanced the 20% user retention rate.  I also delivered notifications for different types of courses based on Kafka. 
+My primary responsibility is to develop an online teaching platform.  I delivered new features on this platform about homework, including clock-in setting time and reminder tasks, comments and likes etc. I also delivered notifications for different types of courses based on Kafka. 
 
  In Baidu. 
 
