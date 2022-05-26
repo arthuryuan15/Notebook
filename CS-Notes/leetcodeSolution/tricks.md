@@ -14,6 +14,8 @@
 
 2. Decending
 
+    one-demensional array sort bye comparator, need transfer int to Integer
+    
     ```java
     Integer[] nums1 = {3, 8, 5, 6};
     // need Integer
@@ -25,7 +27,7 @@
     int[]
     for(int i = 0; i < n; i++)
     ```
-
+    
     
 
 ## Sort by class parameter
