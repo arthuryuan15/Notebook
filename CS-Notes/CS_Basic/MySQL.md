@@ -204,6 +204,8 @@ Set transaction isolation level serializable;
 
 
 
+
+
 **隔离级别越高，性能越差**
 
 READ-UNCOMMITTED > READ-COMMITED > REPEATABLE-READ > SERIALIZABLE
@@ -218,6 +220,10 @@ how to install on centos
 
 ### 1 install yum repo
 
+
+
+>   version 5.7
+
 1 because yum doesn't have mysql, so you need to download from offical website by 
 
 ```shell
@@ -228,6 +234,24 @@ wget https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 
 ```shell
 rpm -ivh mysql57-community-release-el7-9.noarch.rpm
+```
+
+​	after this /etc/yum.repos.d/ will create two repo files which are `mysql-community.repo` `mysql-community-source.repo`
+
+
+
+>   version 8.0
+
+1 because yum doesn't have mysql, so you need to download from offical website by 
+
+```shell
+wget https://repo.mysql.com//mysql80-community-release-el7-6.noarch.rpm
+```
+
+2 and install by repo
+
+```shell
+rpm -ivh mysql80-community-release-el7-6.noarch.rpm
 ```
 
 ​	after this /etc/yum.repos.d/ will create two repo files which are `mysql-community.repo` `mysql-community-source.repo`
@@ -312,4 +336,28 @@ VALUES (value1, value2, value3, ...);
 INSERT INTO table_name
 VALUES (value1, value2, value3, ...);
 ```
+
+
+
+## 6 questions
+
+### 1 error: Failed dependencies
+
+Check `#rpm -qa | grep mysql` to query list all rpm packages related to mysql
+
+------
+
+To remove mysql57-community-release issue:
+
+```
+# rpm -e --nodeps mysql57-community-release
+```
+
+Note: --no-deps no longer works, need to be --nodeps
+
+
+
+### 2 ERROR 2003 (HY000)
+
+
 
