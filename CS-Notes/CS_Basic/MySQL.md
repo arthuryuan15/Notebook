@@ -287,6 +287,10 @@ systemctl start mysqld #start MySQL
 
 
 
+
+
+
+
 ### 3 login mysql
 
 ```shell

@@ -396,22 +396,28 @@ install oh my zsh       https://github.com/ohmyzsh/ohmyzsh
 
 
 
+## 9 user
+
 ```
-adduser username
-passwd username
+adduser [username]
+passwd [username]
+```
+
+```shell
+sudo usermod -aG wheel [username]
 ```
 
 
 
-## 9 make centos beatiful
+## 10 make centos beatiful
 
 
 
 
 
-## 10 rz sz
+## 11 rz sz
 
 
 
-## 11 nginx
+## 12 nginx
 
