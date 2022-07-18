@@ -1,15 +1,13 @@
-install
+# install
 
 ```shell
 brew update
-brew reinstall gcc6 --without-multilib
+brew reinstall gcc11
 
 vim ~/.bash_profile
 // add following code
 export PATH="/usr/local/Cellar/gcc/11.3.0_2/bin:$PATH"
 ```
-
-
 
 
 
@@ -22,8 +20,8 @@ After doing this, Homebrew should place the installed binaries/symlinks in the c
 To correctly setup the `gcc`/`g++` command on mac to use the version you just downloaded, I do this by not changing the symlinks `gcc`/`g++` but instead creating aliases for both `gcc` and `g++` within my shell environment.
 
 ```cpp
-alias gcc='gcc-10'
-alias g++='g++-10'
+alias gcc='gcc-11'
+alias g++='g++-11'
 ```
 
 `gcc-10` and `g++-10` were downloaded using Homebrew. When doing this, Homebrew places `gcc-10` and `g++-10` in /usr/local/bin (which is on the path) and it allows you to create an alias for the regular `gcc`/`g++` commands which point to the versions installed by Homebrew.
@@ -31,13 +29,26 @@ alias g++='g++-10'
 After doing this, running the command `g++ --version` should give you the following:
 
 ```cpp
-g++-10 (Homebrew GCC 10.2.0) 10.2.0
+g++-11 (Homebrew GCC 10.2.0) 10.2.0
 Copyright (C) 2020 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
 You may need to restart your terminal or run `source ~/.bashrc` depending on the type of shell you're using.
+
+# configuration
+
+Sublime-build
+
+```
+{
+  "cmd" : ["g++ -std=c++11 $file_name -o $file_base_name && gtimeout 4s ./$file_base_name<inputf.in>outputf.in"], 
+  "selector" : "source.c",
+  "shell": true,
+  "working_dir" : "$file_path"
+}
+```
 
 
 
