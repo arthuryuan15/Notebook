@@ -411,6 +411,7 @@ sudo usermod -aG wheel [username]
 
 ## 10 make centos beatiful
 
+https://github.com/romkatv/powerlevel10k
 
 
 
