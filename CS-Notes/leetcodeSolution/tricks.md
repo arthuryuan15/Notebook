@@ -231,6 +231,10 @@ System.out.println(Arrays.toString(strs));
 
 
 
+## sort long[]
+
+
+
 # 2 Character
 
 1.   isLetter isCharacter
@@ -259,12 +263,17 @@ int nums = {6, 2, 9, 1};
 System.out.println(Arrays.toString(arr)); // [6, 2, 9, 1]
 ```
 
+Note: Arrays.toString() not working on char[] 
+
 ## 4.1 printf
 
 ```java
 int d = 0;
 int k = 1;
 System.out.printf("d = %d, k = %d\n", d, k);
+```
+
+```
 ```
 
 
@@ -980,8 +989,6 @@ map.higherKey(key); // Returns the least key **strictly** greater than the given
 map.lowerKey(key); // Returns the greatest key **strictly** less than the given key
 // Be careful, return null if there is no such key.
 ```
-
-Shenyang Aerospace University 
 
 
 

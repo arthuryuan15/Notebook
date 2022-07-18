@@ -14,7 +14,7 @@ guidewire
 
 work hard: Working hard is a way to achieve things, I am enjoying challenging things because they will not be boring. After making a great effort to finish things, I will feel the achievement.
 
-Work smart: I will think diifferent condition before I start to code, if not, it will waste two much time, it's not good fot me and team.
+Work smart: I will think diifferent condition before I start to code, if not, it will waste two much time, it's not good for me and team.
 
 Energetic: I like running and basketball, I run for 5 kilometres 4 or 5 times a week. 
 
@@ -22,7 +22,7 @@ Energetic: I like running and basketball, I run for 5 kilometres 4 or 5 times a 
 
 # 2  Challenge
 
-One time my supervisor needed me to develop a code checking tool without any support documents. I listed what I should do, did some research, and tried every possible solution. Sometimes I needed to ask some co-workers from another team. One of them asked me if I wanted to work with him, maybe because he had a good impression of me. (asked some detailed things) Within a very short period of time, the tool was successfully installed on the pipeline.	
+One time my supervisor needed me to develop a code checking tool from the scratch. I listed what I should do, did some research, and tried every possible solution. Sometimes I needed to ask some co-workers from another team. One of them asked me if I wanted to work with him, maybe because he had a good impression of me. (asked some detailed things) Within a very short period of time, the tool was successfully installed on the pipeline.	
 
 
 
@@ -37,6 +37,8 @@ My primary responsibility is to develop an online teaching platform.  I delivere
  In Baidu. 
 
 My primary responsibility is to develop automated test solutions for the systems.  I created a code check tool and installed it on a test pipeline.  The code check tool will check all submitted code is suitable for the specific rules.  If not, it will send a notification by email.  After developing these tools on the test pipeline, this tool found ten problems in the code in a month.
+
+
 
 
 
@@ -88,7 +90,7 @@ Thirdly, I’m happy to work in an environment with a lot of challenges so that 
 
 # 10 expected salary
 
-70,000( sixty thousand)
+100,000( one hundred thousand)
 
 
 

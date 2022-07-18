@@ -145,7 +145,36 @@ d
 
 
 
+read a line.
+
+```cpp
+#include <cstring>
+
+string a;
+getline(cin,a);
+cout<<a.size()<<endl;
+
+for(int i = 0; i < a.size(); i++){
+		cout << a[i] << " ";
+}
+```
+
+
+
 ## 3 Strings libaray
+
+###  s.insert(idx,substring);
+
+current idx will be override, if you want to insert after idx, `insert(idx + 1, substring);`
+
+
+
+## add
+
+```cpp
+String res;
+res += c;
+```
 
 
 

@@ -1,3 +1,22 @@
+## input
+
+
+
+```cpp
+while (cin >> a >> b){ // input until null
+  
+}
+```
+
+
+
+input a line
+
+```cpp
+string a;
+getline(cin, a);
+```
+
 
 
 ## 1 printf
@@ -101,6 +120,20 @@ int main()
 
 
 
+```cpp
+    printf("A=%.4f", 3.1415926 * r * r);
+```
+
+
+
+how to print % by printf
+
+%%
+
+```cpp
+printf("Em percentual: %d %%", p); // Em percentual: 15 %
+```
+
 
 
 ## 2 if statement
@@ -173,6 +206,15 @@ int main()
 ```
 
 
+
+## Math
+
+```cpp
+#include <cmath>
+sqrt(4); // 2
+max(2, 3); // 3
+min(2, 3); // 2
+```
 
 
 
