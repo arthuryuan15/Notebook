@@ -2,7 +2,7 @@
 
 ```shell
 brew update
-brew reinstall gcc11
+brew reinstall gcc@11
 
 vim ~/.bash_profile
 // add following code
