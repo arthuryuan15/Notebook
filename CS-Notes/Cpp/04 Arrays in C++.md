@@ -2,7 +2,7 @@
 int s[300] = {0};
 ```
 
-There is no default value so it's garbage.
+There is no default value so it's garbage. If define in global, there will have a default value is 0.
 
 ## 1 one-demensional array
 
