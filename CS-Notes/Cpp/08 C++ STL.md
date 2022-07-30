@@ -1,3 +1,11 @@
+
+
+https://www.acwing.com/blog/content/404/
+
+https://www.acwing.com/blog/content/844/
+
+
+
 # 第八章 C++ STL
 
 ​    STL是提高C++编写效率的一个利器。
@@ -133,6 +141,8 @@ pop 弹出栈顶元素 // not return poped value !!!!
 
 top return peek of stack
 
+
+
  
 
 # 4.  ` #include <deque>`
@@ -159,25 +169,11 @@ clear 清空队列
 
 #5.   `#include <set>`
 
-头文件set主要包括set和multiset两个容器，分别是“有序集合”和“有序多重集合”，即前者的元素不能重复，而后者可以包含若干个相等的元素。set和multiset的内部实现是一棵红黑树，它们支持的函数基本相同。
 
- 
 
-声明
+头文件set主要包括set和multiset两个容器，分别是“有序集合”和“有序多重集合”，即前者的元素不能重复，而后者可以包含若干个相等的元素。set和multiset的内部实现是一棵红黑树（==平衡树==），它们支持的函数基本相同。
 
-​    set<int> s;
-
-struct rec{…}; set<rec> s;   // 结构体rec中必须定义小于号
-
-multiset<double> s;
-
- 
-
-size/empty/clear
-
-​    与vector类似
-
- 
+  
 
 迭代器
 
@@ -187,87 +183,57 @@ set和multiset的迭代器称为“双向访问迭代器”，不支持“随机
 
 若把it++，则it会指向“下一个”元素。这里的“下一个”元素是指在元素从小到大排序的结果中，排在it下一名的元素。同理，若把it--，则it将会指向排在“上一个”的元素。
 
- 
+```cpp
+// order by first key, if frist key are same, order by second key
+set<pair<int, string>> s; // has been initial automaticallty, you can insert directly witout intial pair, that's different from java
 
-​    begin/end
+	// 1 insert
+	s.insert({3, "bb"});
+	s.insert({2, "aa"});
 
-​       返回集合的首、尾迭代器，时间复杂度均为O(1)。
-
-​       s.begin() 是指向集合中最小元素的迭代器。
-
-s.end() 是指向集合中最大元素的下一个位置的迭代器。换言之，就像vector一样，是一个“前闭后开”的形式。因此--s.end()是指向集合中最大元素的迭代器。
-
- 
-
-​    insert
-
-​       s.insert(x)把一个元素x插入到集合s中，时间复杂度为O(logn)。
-
-​       在set中，若元素已存在，则不会重复插入该元素，对集合的状态无影响。
-
- 
-
-​    find
-
-s.find(x) 在集合s中查找等于x的元素，并返回指向该元素的迭代器。若不存在，则返回s.end()。时间复杂度为O(logn)。
-
-
-​    lower_bound/upper_bound
-
-​       这两个函数的用法与find类似，但查找的条件略有不同，时间复杂度为 O(logn)。
-
-s.lower_bound(x) 查找大于等于x的元素中最小的一个，并返回指向该元素的迭代器。
-
-s.upper_bound(x) 查找大于x的元素中最小的一个，并返回指向该元素的迭代器。
-
- 
-
-​    erase
-
-设it是一个迭代器，s.erase(it) 从s中删除迭代器it指向的元素，时间复杂度为O(logn)
-
-设x是一个元素，s.erase(x) 从s中删除所有等于x的元素，时间复杂度为O(k+logn)，其中k是被删除的元素个数。
-
- 
-
-​    count
-
-​       s.count(x) 返回集合s中等于x的元素个数，时间复杂度为 O(k +logn)，其中k为元素x的个数。
-
- 
-
-#6.   `#include <map>`
-
-map容器是一个键值对key-value的映射，其内部实现是一棵以key为关键码的红黑树。Map的key和value可以是任意类型，其中key必须定义小于号运算符。
+	// 2 begin/end
+	// 返回集合的首、尾迭代器，时间复杂度均为O(1)。
+	cout << (*s.begin()).first << endl;
+	cout << (*s.begin()).second << endl;
+```
 
 
 
-Defaut: is ordered 
 
-​    声明
-
-​       map<key_type, value_type> name;
-
-​       例如：
-
-​       map<long, long, bool> vis;
-
-​       map<string, int> hash;
-
-​       map<pair<int, int>, vector<int>> test;
 
 ```cpp
-unordered_map<char,int>mp;
-mp['a'] = 1;
-mp['a']++;
+#include<iostream>
+#include<set>
 
-cout << mp['a'] << endl;
+using namespace std;
 
-for(auto &i:mp){
-  if(i.second==1){
-    cout<<i.first<<endl;
-    return;
-  }
+
+int main(){
+  
+	set<int> s;
+
+	// 1 insert
+	s.insert(3);
+	s.insert(1);
+
+	// 2 begin/end
+	// 返回集合的首、尾迭代器，时间复杂度均为O(1)。
+	cout << *s.begin() << endl;
+	
+	// 3 find
+	// s.lower_bound(x) 查找大于等于x的元素中最小的一个，并返回指向该元素的迭代器。
+	// s.upper_bound(x) 查找大于x的元素中最小的一个，并返回指向该元素的迭代器。
+	cout << *s.lower_bound(3) << endl;
+	
+
+	// 4 erase
+	// 设it是一个迭代器，s.erase(it) 从s中删除迭代器it指向的元素，时间复杂度为O(logn)
+	// 设x是一个元素，s.erase(x) 从s中删除所有等于x的元素，时间复杂度为O(k+logn)，其中k是被删除的元素个数。
+	s.erase(4);
+
+	// 4 count
+	// s.count(x) 返回集合s中等于x的元素个数，时间复杂度为 O(k +logn)，其中k为元素x的个数。
+	cout << s.count(3) << endl;
 }
 ```
 
@@ -275,26 +241,69 @@ for(auto &i:mp){
 
  
 
-​    size/empty/clear/begin/end均与set类似。
+#6.   `#include <map>`
 
- 
+map容器是一个键值对key-value的映射，其内部实现是一棵以key为关键码的红黑树。Map的key和value可以是任意类型，其中key必须定义小于号运算符。
 
-​    Insert/erase
-
-​       与set类似，但其参数均是pair<key_type, value_type>。
+By default, a Map in C++ is sorted in **increasing order based on its key**
 
 
 
- 
+```cpp
+#include<iostream>
+#include<map>
 
-​    find
+using namespace std;
 
-​       h.find(x) 在变量名为h的map中查找key为x的二元组。
+int main(){
+  
+	map<int,int> mp;
+	
+	// []操作符是map最吸引人的地方。
+	// 我们可以很方便地通过h[key]来得到key对应的value，还可以对h[key]进行赋值操作，改变key对应的value。
+	mp[2] = 1;
+	mp[2]++;
 
- 
+	cout << mp[2] << endl;
 
-​    []操作符
+	// 1 iterator
+	for(auto &i:mp){
+	  if(i.second == 1){
+	    cout << i.first << endl;
+	  }
+	}
 
-​       h[key] 返回key映射的value的引用，时间复杂度为O(logn)。
+	// 2 size
+	cout << "size: " << mp.size() << endl;
 
-[]操作符是map最吸引人的地方。我们可以很方便地通过h[key]来得到key对应的value，还可以对h[key]进行赋值操作，改变key对应的value。
+	// 3 empty
+	cout << "empty: " << mp.empty() << endl;
+
+	// 4 clear
+	mp.clear();
+	cout << "empty: " << mp.empty() << endl;
+
+	// 5 begin => three ways to get first entry
+	mp[1] = 10;
+	auto firstEntry = *mp.begin();
+	cout << firstEntry.first << endl;
+	cout << firstEntry.second << endl;
+
+  // prefer because `auto firstEntry = *mp.begin();` will cost a lot of time
+	cout << (*mp.begin()).first << endl;
+	cout << (*mp.begin()).second << endl;
+
+	cout << mp.begin() -> first << endl;
+	cout << mp.begin() -> second << endl;
+
+	// 6 insert
+	mp.insert({4, 3});
+	cout << mp[4] << endl;
+
+	// 7 erase
+	mp.erase(4);
+	cout << mp[4] << endl; // if == 0 means don't have this key
+  
+}
+```
+
