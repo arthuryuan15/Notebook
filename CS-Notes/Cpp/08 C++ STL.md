@@ -71,6 +71,14 @@ for (int i = 0; i < a.size(); i++) cout << a[i] << endl;
 for (vector<int>::iterator it = a.begin(); it != a.end(); it ++) cout << *it << endl;
 ```
 
+
+
+**How to sort in descending order?** 
+
+```cpp
+sort(list.begin(), list.end(), greater<int>());
+```
+
  
 
 5 front/back
@@ -305,5 +313,14 @@ int main(){
 	cout << mp[4] << endl; // if == 0 means don't have this key
   
 }
+```
+
+
+
+```cpp
+#include <cstring>
+
+memset(a, -1, sizeof(a));
+memset(vis, false, sizeof(vis));
 ```
 
