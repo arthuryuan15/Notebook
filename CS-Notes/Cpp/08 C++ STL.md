@@ -199,8 +199,8 @@ set<pair<int, string>> s; // has been initial automaticallty, you can insert dir
 	s.insert({3, "bb"});
 	s.insert({2, "aa"});
 
-	// 2 begin/end
-	// 返回集合的首、尾迭代器，时间复杂度均为O(1)。
+	// 2 begin/end                                                                                                                                                                                     
+	// 返回集合的首、尾迭代器，时间复杂度均为O            
 	cout << (*s.begin()).first << endl;
 	cout << (*s.begin()).second << endl;
 ```
