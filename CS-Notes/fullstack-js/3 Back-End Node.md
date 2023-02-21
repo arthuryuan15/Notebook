@@ -34,7 +34,7 @@ The back-ends of modern web applications include some sort of *database*, often 
 
 In addition to the database itself, the back-end needs a way to programmatically access, change, and analyze the data stored there.
 
-![image-20210301113306369](https://tva1.sinaimg.cn/large/e6c9d24egy1go4l3xx1izj21dk0owgoc.jpg)
+![image-20210301113306369](https://p.ipic.vip/ldzqd9.jpg)
 
 
 

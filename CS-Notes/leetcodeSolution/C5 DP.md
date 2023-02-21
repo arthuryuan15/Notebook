@@ -17,7 +17,7 @@ We can define a array dp to save the method of climbing stairs, dp[i] means the 
 
 the i st stair can be climbed by i-1 st stair and i-2 st stair, the number of climbing i st stair is the sum number of i -1 st and i -2 st.
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/14fe1e71-8518-458f-a220-116003061a83.png" width="200px"> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/m0po5n.png" width="200px"> </div><br>
 
 ```java
 class Solution {
@@ -45,7 +45,7 @@ class Solution {
 
 [Leetcode](https://leetcode.com/problems/house-robber/description/) 
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/2de794ca-aa7b-48f3-a556-a0e2708cb976.jpg" width="350px"> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/y90b4h.jpg" width="350px"> </div><br>
 
 ```java
 public int rob(int[] nums) {
@@ -218,7 +218,7 @@ dp[i]: 前i个数构成的等差数列的个数，属性: 数量
 
 关注最后一个状态dp[i-1]
 
-![image-20211015232511027](https://tva1.sinaimg.cn/large/008i3skNgy1gvh342i5iqj60xa0c5din02.jpg)
+![image-20211015232511027](https://p.ipic.vip/osauh2.jpg)
 
 ```html
 A = [0, 1, 2, 3, 4]
@@ -288,7 +288,7 @@ dp[i]: 将 i 拆分成至少两个整数的和之后，这些正整数构成的�
 
 关注最后一个状态：
 
-![image-20211015232536809](https://tva1.sinaimg.cn/large/008i3skNgy1gvh34gpv01j60kn0bamyk02.jpg)
+![image-20211015232536809](https://p.ipic.vip/qgq5hh.jpg)
 
 ```java
 public int integerBreak(int n) {
@@ -313,7 +313,7 @@ dp[i]: 构成i的完全平方数的数量， 属性：最小
 
 关注最后一个状态：最后一个状态可以是`0, i-1*1, i-2*2, i -3*3`其中一个.
 
-![image-20211015230258085](https://tva1.sinaimg.cn/large/008i3skNgy1gvh2gxu1l3j60p10gdacj02.jpg)
+![image-20211015230258085](https://p.ipic.vip/j29ic3.jpg)
 
 ```java
 class Solution {
@@ -380,7 +380,7 @@ public int numDecodings(String s) {
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[n]=max\{1,dp[i]+1|S_i<S_n\&\&i<n\}" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ee994da4-0fc7-443d-ac56-c08caf00a204.jpg" width="350px"> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/czopx5.jpg" width="350px"> </div><br>
 
 对于一个长度为 N 的序列，最长递增子序列并不一定会以 S<sub>N</sub> 为结尾，因此 dp[N] 不是序列的最长递增子序列的长度，需要遍历 dp 数组找出最大值才是所要的结果，max{ dp[i] | 1 <= i <= N} 即为所求。
 
@@ -553,7 +553,7 @@ public int wiggleMaxLength(int[] nums) {
 
 <!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[i][j]=\left\{\begin{array}{rcl}dp[i-1][j-1]&&{S1_i==S2_j}\\max(dp[i-1][j],dp[i][j-1])&&{S1_i<>S2_j}\end{array}\right." class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ecd89a22-c075-4716-8423-e0ba89230e9a.jpg" width="450px"> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/9utt2q.jpg" width="450px"> </div><br>
 
 对于长度为 N 的序列 S<sub>1</sub> 和长度为 M 的序列 S<sub>2</sub>，dp[N][M] 就是序列 S<sub>1</sub> 和序列 S<sub>2</sub> 的最长公共子序列长度。
 
@@ -597,9 +597,9 @@ public int wiggleMaxLength(int[] nums) {
 
 第 i 件物品可添加也可以不添加，取决于哪种情况下最大价值更大。因此，0-1 背包的状态转移方程为：
 
-<!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[i][j]=max(dp[i-1][j],dp[i-1][j-w]+v)" class="mathjax-pic"/></div> <br>-->
+<!--<div align="center"><img src="https://p.ipic.vip/ulq45n.gif" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/8cb2be66-3d47-41ba-b55b-319fc68940d4.png" width="400px"> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/opqfw2.png" width="400px"> </div><br>
 
 ```java
 // W 为背包总体积
@@ -626,9 +626,9 @@ public int knapsack(int W, int N, int[] weights, int[] values) {
 
 在程序实现时可以对 0-1 背包做优化。观察状态转移方程可以知道，前 i 件物品的状态仅与前 i-1 件物品的状态有关，因此可以将 dp 定义为一维数组，其中 dp[j] 既可以表示 dp[i-1][j] 也可以表示 dp[i][j]。此时，
 
-<!--<div align="center"><img src="https://latex.codecogs.com/gif.latex?dp[j]=max(dp[j],dp[j-w]+v)" class="mathjax-pic"/></div> <br>-->
+<!--<div align="center"><img src="https://p.ipic.vip/oflfvf.gif" class="mathjax-pic"/></div> <br>-->
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/9ae89f16-7905-4a6f-88a2-874b4cac91f4.jpg" width="300px"> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/6v6zi1.jpg" width="300px"> </div><br>
 
 因为 dp[j-w] 表示 dp[i-1][j-w]，因此不能先求 dp[i][j-w]，防止将 dp[i-1][j-w] 覆盖。也就是说要先计算 dp[i][j] 再计算 dp[i][j-w]，在程序实现时需要按倒序来循环求解。
 
@@ -993,7 +993,7 @@ public int combinationSum4(int[] nums, int target) {
 
 题目描述：交易之后需要有一天的冷却时间。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ffd96b99-8009-487c-8e98-11c9d44ef14f.png" width="300px"> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/d19j2n.png" width="300px"> </div><br>
 
 ```java
 public int maxProfit(int[] prices) {
@@ -1036,7 +1036,7 @@ The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
 
 题目描述：每交易一次，都要支付一定的费用。
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/1e2c588c-72b7-445e-aacb-d55dc8a88c29.png" width="300px"> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/qd4joi.png" width="300px"> </div><br>
 
 ```java
 public int maxProfit(int[] prices, int fee) {
@@ -1296,7 +1296,7 @@ class Solution {
 
 
 
-![image-20211003220209327](https://tva1.sinaimg.cn/large/008i3skNgy1gv35a1iacij61di0u0taz02.jpg)
+![image-20211003220209327](https://p.ipic.vip/08azby.jpg)
 
 Given `n` orders, each order consist in pickup and delivery services. 
 

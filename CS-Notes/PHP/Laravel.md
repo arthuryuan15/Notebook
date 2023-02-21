@@ -32,7 +32,7 @@ Illuminate?
 
 **Laravel’s Request Lifecycle** 
 
-![Cover image for Laravel Request Lifecycle](https://res.cloudinary.com/practicaldev/image/fetch/s--nEVwEz5T--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/7i2siqphm44ihjh4gfme.png)
+![Cover image for Laravel Request Lifecycle](https://p.ipic.vip/l08i43.jpg)
 
 
 
@@ -44,7 +44,7 @@ Illuminate?
 
 Routes, RequestHandlers, Middleware?
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gs9fkwob7kj30d206it93.jpg" alt="image-20210708123104139" style="zoom:33%;" />
+<img src="https://p.ipic.vip/oehjhf.jpg" alt="image-20210708123104139" style="zoom:33%;" />
 
 
 

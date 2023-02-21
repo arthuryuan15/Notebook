@@ -372,13 +372,13 @@ class UserMailer
 
 ## 3 debug
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsafhpkydqj31hw0qotea.jpg" alt="image-20210709091334428" style="zoom:67%, width:200;" />
+<img src="https://p.ipic.vip/s0907c.jpg" alt="image-20210709091334428" style="zoom:67%, width:200;" />
 
 
 
 
 
-![image-20210709091449483](https://tva1.sinaimg.cn/large/008i3skNly1gsafj0gtrij313w0u0wwj.jpg)
+![image-20210709091449483](https://p.ipic.vip/mr9z14.jpg)
 
 <img src="/Users/yuanjinshuai/Library/Application Support/typora-user-images/image-20210709091541436.png" alt="image-20210709091541436" style="zoom: 33%;" />
 
@@ -386,7 +386,7 @@ class UserMailer
 
 
 
-![image-20210709091720865](https://tva1.sinaimg.cn/large/008i3skNly1gsafln6pm9j315g0u0tkp.jpg)
+![image-20210709091720865](https://p.ipic.vip/8yvxqu.jpg)
 
 <img src="/Users/yuanjinshuai/Library/Application Support/typora-user-images/image-20210709091804776.png" alt="image-20210709091804776" style="zoom:33%;" />
 
@@ -404,13 +404,13 @@ xdebug.location
 
 ### Mamp Configuration
 
-![image-20210709204518947](https://tva1.sinaimg.cn/large/008i3skNly1gsazhh9886j319a0u0njb.jpg)
+![image-20210709204518947](https://p.ipic.vip/6zjo88.jpg)
 
 Note: the document root is the path where index.php or server.php, the last level path of this.
 
-![image-20210709204607154](https://tva1.sinaimg.cn/large/008i3skNly1gsazi9ebc6j319a0u0kam.jpg)
+![image-20210709204607154](https://p.ipic.vip/e4gvyv.jpg)
 
-![image-20210709204822336](https://tva1.sinaimg.cn/large/008i3skNly1gsazknb0pyj319a0u0qoa.jpg)
+![image-20210709204822336](https://p.ipic.vip/698uml.jpg)
 
 All you need to do in mamp is over, then save it
 
@@ -418,7 +418,7 @@ https://blog.csdn.net/u012852597/article/details/78358463
 
 ### Switch to phpstorm 
 
-![image-20210709205011202](https://tva1.sinaimg.cn/large/008i3skNly1gsazmi56h9j313w0u0k5u.jpg)
+![image-20210709205011202](https://p.ipic.vip/qqej64.jpg)
 
 <img src="/Users/yuanjinshuai/Library/Application Support/typora-user-images/image-20210709205021628.png" alt="image-20210709205021628" style="zoom:25%;" />
 
@@ -426,19 +426,19 @@ https://blog.csdn.net/u012852597/article/details/78358463
 
 
 
-![image-20210709205153524](https://tva1.sinaimg.cn/large/008i3skNly1gsazo9txiyj313w0u0dyq.jpg)
+![image-20210709205153524](https://p.ipic.vip/f0lu0m.jpg)
 
 Note: this is debug listening port
 
-![image-20210709205308179](https://tva1.sinaimg.cn/large/008i3skNly1gsazpkhf6uj313w0u0k5j.jpg)
+![image-20210709205308179](https://p.ipic.vip/czg3eq.jpg)
 
 
 
-![image-20210709230947178](https://tva1.sinaimg.cn/large/008i3skNly1gsb3nrud08j318o0hojud.jpg)
+![image-20210709230947178](https://p.ipic.vip/dq4rmv.jpg)
 
 
 
-![image-20210709235851126](https://tva1.sinaimg.cn/large/008i3skNly1gsb52u4v8dj31bm0u0atz.jpg)
+![image-20210709235851126](https://p.ipic.vip/hfkp73.jpg)
 
 
 
@@ -448,17 +448,17 @@ start url must have php file what you want to start, if miss, return forbidden
 
 if there are not found, that means the root directory in mamp is not right, you need to change to the path of project. After change and save, click `webstart` button on mamp, annd you should see the next picture.
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsb55wfs97j30v40bewfv.jpg" alt="image-20210710000148242" style="zoom:33%;" />
+<img src="https://p.ipic.vip/57f2db.jpg" alt="image-20210710000148242" style="zoom:33%;" />
 
 
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsb5aqhiokj31j30u0thd.jpg" alt="image-20210710000626861" style="zoom:33%;" />
+<img src="https://p.ipic.vip/6h9ucj.jpg" alt="image-20210710000626861" style="zoom:33%;" />
 
 change the url to `http://localhost:8888/index.php`, you should see phpstorm catch the request if xdebug port is listening.
 
 
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsb5cboeyij31c00u0n8i.jpg" alt="image-20210710000758316" style="zoom:33%;" />
+<img src="https://p.ipic.vip/y6banx.jpg" alt="image-20210710000758316" style="zoom:33%;" />
 
 # How to Create phpinfo File and Check PHP Information
 

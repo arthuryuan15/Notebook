@@ -10,7 +10,7 @@ Nice! We have a Git project. A Git project can be thought of as having three par
 
 The Git workflow consists of editing files in the working directory, adding files to the staging area, and saving changes to a Git repository. In Git, we save changes with a *commit*, which we will learn more about in this lesson.
 
-![image-20210224113730155](https://tva1.sinaimg.cn/large/008eGmZEly1gnyt52zshsj31c20n276i.jpg)
+![image-20210224113730155](https://p.ipic.vip/atsbd5.jpg)
 
 Generalizations
 
@@ -128,7 +128,7 @@ The diagram to the right illustrates branching.
 
 - *New Branch* is a different *version* of the Git project. It contains commits from *Master* but also has committed that *Master* does not have.
 
-  ![image-20210228194748731](https://tva1.sinaimg.cn/large/e6c9d24egy1go3tsahbdkj219s0qm0u4.jpg)
+  ![image-20210228194748731](https://p.ipic.vip/m1abpm.jpg)
 
 
 
@@ -447,7 +447,7 @@ e292c56 update code in SDC
 
 ## tag
 
-![image-20211126111555793](https://tva1.sinaimg.cn/large/008i3skNgy1gwt228br48j30kc0j1acs.jpg)
+![image-20211126111555793](https://p.ipic.vip/a2826h.jpg)
 
 ```shell
 $ git tag

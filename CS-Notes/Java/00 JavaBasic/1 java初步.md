@@ -34,7 +34,7 @@ Effective Java中文版
 
 【1】跨平台原理理解：
 
-![image-20210326234923937](https://tva1.sinaimg.cn/large/008eGmZEly1goxqqrhacwj31q00t4h1o.jpg)
+![image-20210326234923937](https://p.ipic.vip/5e7pwi.jpg)
 
 注意：==上面的字要烂熟于心==
 
@@ -51,7 +51,7 @@ Effective Java中文版
 
 ​		通过不同的“虚拟机”将Java字节码文件解释为对应机器语言并执行  	
 
-![image_24316](https://tva1.sinaimg.cn/large/0081Kckwly1gmc435k3gaj30g205zq4b.jpg)
+![image_24316](https://p.ipic.vip/tuybmw.jpg)
 
 
 
@@ -112,13 +112,13 @@ Effective Java中文版
 
 
 
-![image-20220401074124258](https://tva1.sinaimg.cn/large/e6c9d24egy1h0ujy2atywj20iu0tzwhb.jpg)
+![image-20220401074124258](https://p.ipic.vip/02be86.jpg)
 
 
 
 GC原理：
 
-![image-20210327003819829](https://tva1.sinaimg.cn/large/008eGmZEly1goxs5jgsjwj30cz1797vs.jpg)
+![image-20210327003819829](https://p.ipic.vip/47t6it.jpg)
 
 ## 6. 常见dos命令
 

@@ -92,7 +92,7 @@ Given "paper", "title", return true.
 
 Record last occurance position of characters, If the position of the characters in the two strings is the same last time, then they are isomorphic.
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gufoz1y77zj60e80me76w02.jpg" alt="image-20210913151001975" style="zoom: 33%;" />
+<img src="https://p.ipic.vip/u13z11.jpg" alt="image-20210913151001975" style="zoom: 33%;" />
 
 ```java
 class Solution {
@@ -137,7 +137,7 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 From the beginning of a digit, try to extend substring.
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gufrhu1hyyj60uk0fwn0a02.jpg" alt="image-20210913163721428" style="zoom: 50%;" />
+<img src="https://p.ipic.vip/qt5j9o.jpg" alt="image-20210913163721428" style="zoom: 50%;" />
 
 ```java
 class Solution {
@@ -186,7 +186,7 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gufszc4r7jj60ug0mkaf702.jpg" alt="image-20210913172845951" style="zoom:50%;" />
+<img src="https://p.ipic.vip/3z2ohn.jpg" alt="image-20210913172845951" style="zoom:50%;" />
 
 ```java
 class Solution {
@@ -214,7 +214,7 @@ class Solution {
 
 [Leetcode](https://leetcode.com/problems/count-binary-substrings/description/)
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1guftthxuspj615g0hy42a02.jpg" alt="image-20210913175746111" style="zoom: 50%;" />
+<img src="https://p.ipic.vip/nlrso9.jpg" alt="image-20210913175746111" style="zoom: 50%;" />
 
 We start from second position and the length of cur is 1.`cur = 1, i = 1`
 
@@ -247,11 +247,11 @@ public int countBinarySubstrings(String s) {
 
 ## Trie
 
-<div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/5c638d59-d4ae-4ba4-ad44-80bdc30f38dd.jpg"/> </div><br>
+<div align="center"> <img src="https://p.ipic.vip/mbx5f5.jpg"/> </div><br>
 
 Trie，Store and search collection of string effectively.
 
-![image-20210925121602541](https://tva1.sinaimg.cn/large/008i3skNgy1gutfdspj8wj60qq0oun1s02.jpg)
+![image-20210925121602541](https://p.ipic.vip/h7uud5.jpg)
 
 [Acwing](https://www.acwing.com/problem/content/837/)
 

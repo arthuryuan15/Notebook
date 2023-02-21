@@ -1,8 +1,8 @@
  branching model 和 rebase
 
-![image-20220330195646270](https://tva1.sinaimg.cn/large/e6c9d24egy1h0styiwr09j20s808s3yu.jpg)
+![image-20220330195646270](https://p.ipic.vip/y45yb0.jpg)
 
-![image-20220330195707972](https://tva1.sinaimg.cn/large/e6c9d24egy1h0styyj1slj20sg0bt0td.jpg)
+![image-20220330195707972](https://p.ipic.vip/psi7wv.jpg)
 
 ```
 1. git check out feature
@@ -18,7 +18,7 @@ Now we are in master and m3 as latest commit
 git merge feature // commits all you feature commit, not only lastest one
 ```
 
-![image-20220330200627126](https://tva1.sinaimg.cn/large/e6c9d24egy1h0su8d677ej20mq0cnt9d.jpg)
+![image-20220330200627126](https://p.ipic.vip/gyzlq6.jpg)
 
 ```
 git merge --squash feature // smmarize all the changes in the feature branch and make it last commit and merge this last commit to master branch
@@ -26,9 +26,9 @@ git merge --squash feature // smmarize all the changes in the feature branch and
 
 
 
-![image-20220330202733377](https://tva1.sinaimg.cn/large/e6c9d24egy1h0suubzuigj20qk0jsmyc.jpg)
+![image-20220330202733377](https://p.ipic.vip/kkkbhc.jpg)
 
-![image-20220330202813480](https://tva1.sinaimg.cn/large/e6c9d24egy1h0suv0pfu4j20q60m2gn7.jpg)
+![image-20220330202813480](https://p.ipic.vip/z2nhz4.jpg)
 
 ```
 // in feature branch

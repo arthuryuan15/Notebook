@@ -12,7 +12,7 @@ For example, if you wanted to access the `<body>` element in your script, you co
 
 Similarly, you could access the `<title>` element with the `.title` property. See a [comprehensive list](https://developer.mozilla.org/en-US/docs/Web/API/Document) of all `document` properties.
 
-<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1go0dcg1lpzj317l0u0n0f.jpg" alt="image-20210225200207315" style="zoom: 33%;" />
+<img src="https://p.ipic.vip/cytcne.jpg" alt="image-20210225200207315" style="zoom: 33%;" />
 
 
 
@@ -270,7 +270,7 @@ Browsers can fire many other events without a user — you can check out a list 
 
 Many events need user interaction with the DOM to fire. One user interaction event you’ve become familiar with is the `click` event. A `click` event fires when the user presses and releases a mouse button on an element in the DOM.
 
-![Click Event Image](https://content.codecademy.com/courses/javascript-dom-events/click-event.png)
+![Click Event Image](https://p.ipic.vip/orn0ca.png)
 
 In the rest of this lesson, you’ll explore more user interaction event types like the mouse and keyboard events. To explore more event types, check out the [MDN Events Reference](https://developer.mozilla.org/en-US/docs/Web/Events).
 
@@ -280,11 +280,11 @@ In the rest of this lesson, you’ll explore more user interaction event types l
 
 Other popular types of events are keyboard events! *keyboard events* are triggered by user interaction with keyboard keys in the browser.
 
-The `keydown` event is fired while a user presses a key down.<img src="https://content.codecademy.com/courses/javascript-dom-events/keydown.png" alt="Key Down Event Image" style="zoom:25%;" />
+The `keydown` event is fired while a user presses a key down.<img src="https://p.ipic.vip/jbkpfv.png" alt="Key Down Event Image" style="zoom:25%;" />
 
-The `keyup` event is fired while a user releases a key.<img src="https://content.codecademy.com/courses/javascript-dom-events/keyup.png" alt="Key Up Event Image" style="zoom:25%;" />
+The `keyup` event is fired while a user releases a key.<img src="https://p.ipic.vip/013zt2.png" alt="Key Up Event Image" style="zoom:25%;" />
 
-The `keypress` event is fired when a user presses a key down and releases it. This is different from using `keydown` and `keyup` events together, because those are two complete events and `keypress` is one complete event.<img src="https://content.codecademy.com/courses/javascript-dom-events/keypress.png" alt="Key P ress Event Image" style="zoom:25%;" />
+The `keypress` event is fired when a user presses a key down and releases it. This is different from using `keydown` and `keyup` events together, because those are two complete events and `keypress` is one complete event.<img src="https://p.ipic.vip/54ip3s.png" alt="Key P ress Event Image" style="zoom:25%;" />
 
 Keyboard events have unique properties assigned to their event objects like the `.key` property that stores the values of the key pressed by the user. You can program the event handler function to react to a specific key, or react to any interaction with the keyboard.
 
@@ -384,11 +384,11 @@ The first value for the `type` attribute we’re going to explore is `"text"`. W
 
 Here’s a screen shot of how the rendered form looks like on a web page for the Chrome browser (different browsers have different default rendering). When initially loaded, it will be an empty box:
 
-![rendered empty text field from input element type='text'](https://content.codecademy.com/courses/learn-html-forms/textInput%20-%20unlabeled%20blank.png)
+![rendered empty text field from input element type='text'](https://p.ipic.vip/nji0lg.png)
 
 After users type into the `<input>` element, the value of the `value` attribute becomes what is typed into the text field. The value of the `value` attribute is paired with the value of the `name` attribute and sent as text when the form is submitted. For instance, if a user typed in “important details” in the text field created by our `<input>` element:
 
-![rendered filled text field which reads 'important details' ](https://content.codecademy.com/courses/learn-html-forms/textInput%20-%20unlabeled%20filled.png)
+![rendered filled text field which reads 'important details' ](https://p.ipic.vip/5xcwe8.png)
 
 When the form is submitted, the text: `"first-text-field=important details"` is sent to `/example.html` because the value of the `name` attribute is `"first-text-field"` and the value of `value` is `"important details"`.
 
@@ -402,7 +402,7 @@ We could also assign a default value for the `value` attribute so that users hav
 
 Which renders:
 
-![pre-filled text box due to assigned `value` attribute](https://content.codecademy.com/courses/learn-html-forms/textInput%20-%20unlabeled%20prefilled.png)
+![pre-filled text box due to assigned `value` attribute](https://p.ipic.vip/qnyyl9.png)
 
 Time to put this knowledge into practice!
 
@@ -424,7 +424,7 @@ The `<label>` element has an opening and closing tag and displays text that is w
 
 The code above renders:
 
-![rendered form with labeled text field](https://content.codecademy.com/courses/learn-html-forms/label%20-%20text%20input.png)
+![rendered form with labeled text field](https://p.ipic.vip/yw4njq.png)
 
 Look, now users know what the `<input>` element is for! Another benefit for using the `<label>` element is when this element is clicked, the corresponding `<input>` is highlighted/selected.
 
@@ -447,7 +447,7 @@ An `<input type ="password">` element will replace input text with another chara
 
 After a user types into the field, it would look like:
 
-![password field in a form with 6 dots showing text added to the field](https://content.codecademy.com/courses/learn-html-forms/pwInput%20-%20labeled%20filled.png)
+![password field in a form with 6 dots showing text added to the field](https://p.ipic.vip/qozku9.png)
 
 Even though the password field obscures the text of the password, when the form is submitted, the value of the text is sent. In other words, if “hunter2” is typed into the password field, “user-password=hunter2” is sent along with the other information on the form
 
@@ -470,7 +470,7 @@ By setting `type="number"` for an `<input>` we can restrict what users type into
 
 Which renders:
 
-![rendered number input field with arrows to the right hand side of the field](https://content.codecademy.com/courses/learn-html-forms/numInput%20-%20labeled%20blank%20steps.png)
+![rendered number input field with arrows to the right hand side of the field](https://p.ipic.vip/whgu89.png)
 
 Now it’s time to apply this knowledge.
 
@@ -491,7 +491,7 @@ To set the minimum and maximum values of the slider we assign values to the `min
 </form>
 ```
 
-The code above renders:![rendered slider for volume control](https://content.codecademy.com/courses/learn-html-forms/rangeInput%20-%20labeled.png)
+The code above renders:![rendered slider for volume control](https://p.ipic.vip/watmq8.png)
 
 In the example above, every time the slider moves by one, the value of the `<input>`‘s `value` attribute changes.
 
@@ -521,7 +521,7 @@ So far the types of inputs we’ve allowed were all single choices. But, what if
 </form>
 ```
 
-Which renders:![HTML form asking user to select pizza toppings and three topping selections as checkboxes](https://content.codecademy.com/courses/learn-html-forms/checkboxInput%20-%20labeled.png)
+Which renders:![HTML form asking user to select pizza toppings and three topping selections as checkboxes](https://p.ipic.vip/mv3dpu.png)
 
 Notice in the example provided:
 
@@ -551,7 +551,7 @@ Checkboxes work well if we want to present users with multiple options and let t
 
 Which renders:
 
-![rendered form containing radio buttons](https://content.codecademy.com/courses/learn-html-forms/radioInput%20-%20labeled.png)
+![rendered form containing radio buttons](https://p.ipic.vip/wuspo1.png)
 
 Notice from the code snippet, radio buttons (like checkboxes) do not display their value. We have an associated `<label>` to represent the value of the radio button. To group radio buttons together, we assign them the same `name` and only one radio button from that group can be selected.
 
@@ -578,9 +578,9 @@ An alternative solution is to use a dropdown list to allow our users to choose o
 </form>
 ```
 
-Which renders:![rendered dropdown list with the first option showing](https://content.codecademy.com/courses/learn-html-forms/dropdown%20list%20-%20concealed.png)
+Which renders:![rendered dropdown list with the first option showing](https://p.ipic.vip/6bzz5p.png)
 
-And if we click on the field containing the first option, the list is revealed:![rendered dropdown list with the all options showing](https://content.codecademy.com/courses/learn-html-forms/dropdown%20list%20-%20revealed.png)
+And if we click on the field containing the first option, the list is revealed:![rendered dropdown list with the all options showing](https://p.ipic.vip/eiuazt.png)
 
 Notice in the code that we’re using the element `<select>` to create the dropdown list. To populate the dropdown list, we add multiple `<option>` elements, each with a `value` attribute. By default, only one of these options can be selected.
 
@@ -614,9 +614,9 @@ The `<datalist>` is used with an `<input type="text">` element. The `<input>` cr
 
 Notice, in the code above, we have an `<input>` that has a `list` attribute. The `<input>` is associated to the `<datalist>` via the `<input>`‘s `list` attribute and the `id` of the `<datalist>`.
 
-From the code provided, the following form is rendered:![input field with a label 'Ideal city to visit?'](https://content.codecademy.com/courses/learn-html-forms/datalist%20-%20concealed.png)
+From the code provided, the following form is rendered:![input field with a label 'Ideal city to visit?'](https://p.ipic.vip/rtg50n.png)
 
-And when field is selected:![clicking on the input field reveals a dropdown  list](https://content.codecademy.com/courses/learn-html-forms/datalist%20-%20revealed.png)
+And when field is selected:![clicking on the input field reveals a dropdown  list](https://p.ipic.vip/vodh4g.png)
 
 While `<select>` and `<datalist>` share some similarities, there are some major differences. In the associated `<input>` element, users can type in the input field to search for a particular option. If none of the `<option>`s match, the user can still use what they typed in. When the form is submitted, the value of the `<input>`‘s `name` and the `value` of the option selected, or what the user typed in, is sent as a pair.
 
@@ -641,7 +641,7 @@ The `<textarea>` element is used to create a bigger text field for users to writ
 
 In the code above, an empty `<textarea>` that is 5 rows by 30 columns is rendered to the page like so:
 
-![rendered empty textarea element](https://content.codecademy.com/courses/learn-html-forms/textarea%20-%20blank.png)
+![rendered empty textarea element](https://p.ipic.vip/wbp177.png)
 
 If we wanted an even bigger text field, we could click and drag on the bottom right corner to expand it.
 
@@ -671,7 +671,7 @@ To make a submit button in a `<form>`, we’re going to use the reliable `<input
 
 Which renders:
 
-![rendered submit button](https://content.codecademy.com/courses/learn-html-forms/submit%20button2.png)
+![rendered submit button](https://p.ipic.vip/th7j3z.png)
 
 Notice in the code snippet that the `value` assigned to the `<input>` shows up as text on the submit button. If there isn’t a `value` attribute, the default text, `Submit` shows up on the button.
 
@@ -699,7 +699,7 @@ Take for example:
 
 This renders a text box, and if we try to submit the `<form>` without filling it out we get this message:
 
-![message pop up prompting user to fill in the field](https://content.codecademy.com/courses/learn-html-forms/required%20field.png)
+![message pop up prompting user to fill in the field](https://p.ipic.vip/wst88h.png)
 
 The styling of the message varies from browser to browser, the picture above depicts the message in a Chrome browser. We’ll also continue to show these messages as they appear in Chrome in later exercises.
 
@@ -719,7 +719,7 @@ Another built-in validation we can use is to assign a minimum or maximum value f
 </form>
 ```
 
-If a user tries to submit an input that is less than 1 a warning will appear:![prompt on a number field for user to input a value greater than or equal to 1](https://content.codecademy.com/courses/learn-html-forms/min%20max%20attr.png)
+If a user tries to submit an input that is less than 1 a warning will appear:![prompt on a number field for user to input a value greater than or equal to 1](https://p.ipic.vip/kodvzb.png)
 
 A similar message will appear if a user tries to input a number greater than 4. Let’s now see this action
 
@@ -741,7 +741,7 @@ To set a minimum number of characters for a text field, we add the `minlength` a
 
 If a user tries to submit the `<form>` with less than the set minimum, this message appears:
 
-![prompt on a number field for user to length the input](https://content.codecademy.com/courses/learn-html-forms/minlength.png)
+![prompt on a number field for user to length the input](https://p.ipic.vip/rt96gq.png)
 
 And if a user tries to type in more than the maximum allowed number of characters, they don’t get a warning message, but they can’t type it in!
 
@@ -766,7 +766,7 @@ To add this to a form:
 
 With the `pattern` in place, users can’t submit the `<form>` with a number that doesn’t follow the regex. When they try, they’ll see a validation message like so:
 
-![message prompting user to follow the requested format](https://content.codecademy.com/courses/learn-html-forms/pattern.png)
+![message prompting user to follow the requested format](https://p.ipic.vip/6ujk5o.png)
 
 If you want to find out more about Regex, read more at [MDN’s regex article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions).
 
@@ -1902,7 +1902,7 @@ In the following exercises, you will learn CSS properties that will affect the s
 
 Let’s start exploring grid items!
 
-![image-20210226143953691](https://tva1.sinaimg.cn/large/008eGmZEgy1go19neob3sj318f0u0q58.jpg)
+![image-20210226143953691](https://p.ipic.vip/8w3kjx.jpg)
 
 
 

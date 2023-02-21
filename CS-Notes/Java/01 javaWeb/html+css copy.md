@@ -4,7 +4,7 @@
 
 ### 1.1 网络传输三大基石
 
-![Screen Shot 2019-10-29 at 9.48.21 PM](https://tva1.sinaimg.cn/large/0081Kckwly1gmc5eo7p7wj31800oe4az.jpg)
+![Screen Shot 2019-10-29 at 9.48.21 PM](https://p.ipic.vip/74i2mf.jpg)
 
 
 
@@ -1286,7 +1286,7 @@ css：修饰页面样式
 
 ### 2.3.5 盒子模型
 
-![Screen Shot 2019-11-01 at 11.41.11 AM](https://tva1.sinaimg.cn/large/0081Kckwly1gmc5f3j12ej31hg0q70ww.jpg)
+![Screen Shot 2019-11-01 at 11.41.11 AM](https://p.ipic.vip/b3xaun.jpg)
 
 
 

@@ -52,7 +52,7 @@ export  PATH=${PATH}:${JAVA_HOME}/bin:${M2_HOME}/bin
 
 ### 4.2 maven standard directory layout
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1grflfaujetj30ly0timyj.jpg" alt="image-20210612170622117" style="zoom: 25%;" />
+<img src="https://p.ipic.vip/a9777v.jpg" alt="image-20210612170622117" style="zoom: 25%;" />
 
 ​    	src/mian/java `core code`
 

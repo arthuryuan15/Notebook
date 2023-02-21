@@ -60,13 +60,13 @@ SpringBoot对上述Spring的缺点进行的改善和优化，基于约定优于�
 
 
 
-![image-20210602114004630](https://i.loli.net/2021/06/02/YCfOiAJHNTyLIKt.png)
+![image-20210602114004630](https://p.ipic.vip/75wc31.png)
 
 
 
-![image-20210602114017843](https://i.loli.net/2021/06/02/UREfoWa7sIdTK6z.png)
+![image-20210602114017843](https://p.ipic.vip/lp7r5i.png)
 
-![image-20210602114026071](https://i.loli.net/2021/06/02/A4MKVmnHvUWYk1u.png)
+![image-20210602114026071](https://p.ipic.vip/tdhqzj.png)
 
 ### 2.1.2 添加SpringBoot的起步依赖
 

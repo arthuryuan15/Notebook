@@ -83,7 +83,7 @@ Given [1,1,1,2,2,3] and k = 2, return [1,2].
 
 Set there are many bucket, every bucket stores the frequency of occurrence. The index of bucket is the frequency, so the number in i st bucket is i. After putting all number into the bucket, traverse from left to right, the top k number is most frequent number.
 
-![image-20210831215402491](https://tva1.sinaimg.cn/large/008i3skNgy1gu0zlbn7r2j608i09a74q02.jpg)
+![image-20210831215402491](https://p.ipic.vip/03632m.jpg)
 
 ```java
 class Solution {
@@ -128,9 +128,9 @@ class Solution {
 
 [leetcode](https://zxi.mytechroad.com/blog/geometry/leetcode-759-employee-free-time/)
 
-![image-20211005212026938](https://tva1.sinaimg.cn/large/008i3skNgy1gv5fb7mwmqj60d30q140j02.jpg)
+![image-20211005212026938](https://p.ipic.vip/gjc2r9.jpg)
 
-![image-20211005212059113](https://tva1.sinaimg.cn/large/008i3skNgy1gv5fbp5s2yj60ia0gst9v02.jpg)
+![image-20211005212059113](https://p.ipic.vip/7cbh5a.jpg)
 
 ```java
 /*
@@ -185,7 +185,7 @@ class Solution {
 
 `1229. Meeting Scheduler`
 
-![image-20211005221254503](https://tva1.sinaimg.cn/large/008i3skNgy1gv5gtqt9vdj60dl0icgn402.jpg)
+![image-20211005221254503](https://p.ipic.vip/9zucd9.jpg)
 
 ```java
 class Solution {

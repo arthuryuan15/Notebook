@@ -173,15 +173,15 @@ JavaBean对象
 
 作为Spring提供的基本IoC容器，BeanFactory可以完成作为IoC Service Provider的所有职责，包括业务对象的注册和对象间依赖关系的绑定。
 
-![image-20210507193150384](https://tva1.sinaimg.cn/large/008i3skNly1gqa3bvjmrwj30gu06jwfn.jpg)
+![image-20210507193150384](https://p.ipic.vip/2ug8rl.jpg)
 
-![image-20210507193213835](https://tva1.sinaimg.cn/large/008i3skNly1gqa3c8oqgsj30kt06mgmb.jpg)
+![image-20210507193213835](https://p.ipic.vip/kvfemm.jpg)
 
 如以上的实际开发代码中包含的查询相关方法。例如取得某个对象的方法（getBean）、查询 某个对象是否存在于容器中的方法（containsBean），或者取得某个bean的状态或者类型的方法等
 
 因为通常情况下，对于独立的应用程序，只有主入口类才会跟容器的API直接耦合。
 
-![image-20210507193520916](https://tva1.sinaimg.cn/large/008i3skNly1gqa3fhnez8j30qo07bmxs.jpg)
+![image-20210507193520916](https://p.ipic.vip/f199dw.jpg)
 
 
 
@@ -248,11 +248,11 @@ ApplicationContext的Resource加载行为:
 
 * JSP时代（为了将Servlet中的视图渲染逻辑以独立的单元抽取出来）
 
-  ![image-20210508145500795](https://tva1.sinaimg.cn/large/008i3skNly1gqb0y972quj30ek065mxy.jpg)
+  ![image-20210508145500795](https://p.ipic.vip/8ylgsm.jpg)
 
 * Servlet和JSP的联盟
 
-  ![image-20210508145517445](https://tva1.sinaimg.cn/large/008i3skNly1gqb0yjdhb8j30ed069gmk.jpg)
+  ![image-20210508145517445](https://p.ipic.vip/1mh76s.jpg)
 
   通过结合Servlet和JSP，并且引入业务封装逻辑JavaBean，得到JSP Model2。
 
@@ -260,7 +260,7 @@ ApplicationContext的Resource加载行为:
 
 * MVC（Model-View-Controller）
 
-  ![image-20210508145701547](https://tva1.sinaimg.cn/large/008i3skNly1gqb10ci21fj30c708haba.jpg)
+  ![image-20210508145701547](https://p.ipic.vip/yz4iow.jpg)
 
   * Controller负责接收视图发送的请求并进行处理，它会根据请求条件通知模型进行应用程序状态的更新，之后选择合适的视图给用户。
   * Model通过封装了应用的逻辑以及数据状态。

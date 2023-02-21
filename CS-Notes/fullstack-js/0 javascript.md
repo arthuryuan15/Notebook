@@ -1733,7 +1733,7 @@ Remember, we use GET to retrieve data from a source. Take a look at the boilerpl
 
 We’ll construct this template from scratch in a different exercise and walk through what each step does.
 
-<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1go2uba1s7jj311b0u0jvs.jpg" alt="image-20210227232029416" style="zoom: 50%;" />
+<img src="https://p.ipic.vip/qe62h1.jpg" alt="image-20210227232029416" style="zoom: 50%;" />
 
 
 
@@ -1749,7 +1749,7 @@ The major difference between a GET request and POST request is that a POST reque
 
 Review the code from the diagram to construct your own POST request in the next lesson.
 
-<img src="https://tva1.sinaimg.cn/large/008eGmZEgy1go2ujwax8qj312z0u0q7y.jpg" alt="image-20210227232847532" style="zoom:50%;" />
+<img src="https://p.ipic.vip/2dxj38.jpg" alt="image-20210227232847532" style="zoom:50%;" />
 
 ```javascript
   var x = document.getElementById('queryInput');

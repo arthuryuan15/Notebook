@@ -133,7 +133,7 @@ ${msg}
 
 11、配置Tomcat 启动测试！
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7IicxBZbkh0D4dJJiaXSzGEXyMkHnqOKmXfLlOAOV7vFBtsDVX1libCnlXwtCN3BGIxWkic8QVe9wD2nA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](https://p.ipic.vip/ugi02q.jpg)
 
 **可能遇到的问题：访问出现404，排查步骤：**
 
@@ -143,7 +143,7 @@ ${msg}
 
 小结：看这个估计大部分同学都能理解其中的原理了，但是我们实际开发才不会这么写，不然就疯了，还学这个玩意干嘛！我们来看个注解版实现，这才是SpringMVC的精髓，到底有多么简单，看这个图就知道了。
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7IicxBZbkh0D4dJJiaXSzGEXyoSJbC4E1L3euOFzcEzSF0fn4gzjNbpwyXLQCrbLYarJ46HxwC8qz5w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](https://p.ipic.vip/qwvnub.jpg)
 
 ### 注解版
 
@@ -335,7 +335,7 @@ ${msg}
 
 配置Tomcat ，  开启服务器 ， 访问 对应的请求路径！
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7IicxBZbkh0D4dJJiaXSzGEXy3eJXYyibMOnIWqqye9RYfu4zdnE5oYmxiaUHaxAnvZkVEXlyXysRMhTg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](https://p.ipic.vip/osji6s.jpg)
 
 **OK，运行成功！**
 
@@ -361,7 +361,7 @@ ${msg}
 
 再来回顾下原理吧~
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7IicxBZbkh0D4dJJiaXSzGEXyzsXDPy7oAJFsBvvBibiaFWpSp75vFIEOCBm7wnt4JKXJCHB9MflUycKw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![img](https://p.ipic.vip/yvdd6n.jpg)
 
 
 

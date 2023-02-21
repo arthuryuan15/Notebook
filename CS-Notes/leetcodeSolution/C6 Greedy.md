@@ -160,7 +160,7 @@ Height descending, if two elements are same in height, the k will be ascending,
 
 then add them into a queue from inserting or appending
 
-![image-20211008094214873](https://tva1.sinaimg.cn/large/008i3skNgy1gv8bzlworpj60hh0ajtak02.jpg)
+![image-20211008094214873](https://p.ipic.vip/zpdhol.jpg)
 
 Summary:
 
@@ -409,7 +409,7 @@ This is a partition so that each letter appears in at most one part.
 A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits S into less parts.
 ```
 
-![image-20210928164223471](https://tva1.sinaimg.cn/large/008i3skNgy1gux3xq996aj61cn0u0jwv02.jpg)
+![image-20210928164223471](https://p.ipic.vip/35y1d0.jpg)
 
 ```java
 class Solution {

@@ -2,7 +2,7 @@
 
 ## 1. 引入
 
-![image-20210412225524567](https://tva1.sinaimg.cn/large/008eGmZEly1gphcppd4fmj320g0tmam0.jpg)
+![image-20210412225524567](https://p.ipic.vip/tj6fn2.jpg)
 
 需要导入一个jar包。mysql-connector-java-5.1.12-bin.jar
 

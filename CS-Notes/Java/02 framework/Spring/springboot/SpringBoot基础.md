@@ -68,17 +68,17 @@ SpringBoot对上述Spring的缺点进行的改善和优化，基于约定优于�
 
 使用idea工具创建一个maven工程，该工程为普通的java工程即可
 
-![image-20210602113947409](https://i.loli.net/2021/06/02/9zbfXyqw1dD3gSp.png)
+![image-20210602113947409](https://p.ipic.vip/4sj390.png)
 
 
 
-![image-20210602114004630](https://i.loli.net/2021/06/02/YCfOiAJHNTyLIKt.png)
+![image-20210602114004630](https://p.ipic.vip/1wddtj.png)
 
 
 
 ![image-20210602114017843](https://i.loli.net/2021/06/02/UREfoWa7sIdTK6z.png)
 
-![image-20210602114026071](https://i.loli.net/2021/06/02/A4MKVmnHvUWYk1u.png)
+![image-20210602114026071](https://p.ipic.vip/gibocl.png)
 
 ### 2.1.2 添加SpringBoot的起步依赖
 

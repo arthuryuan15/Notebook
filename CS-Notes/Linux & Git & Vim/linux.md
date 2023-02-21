@@ -307,7 +307,7 @@ If your branch is ahead of 'origin/master' by 3 commits like this
 git reset --hard origin/master
 ```
 
-![image-20210105120613751](https://tva1.sinaimg.cn/large/0081Kckwly1gmcoub6mn1j316a0u0u0y.jpg)
+![image-20210105120613751](https://p.ipic.vip/ertpuy.jpg)
 
 use the following command to create a new branch and copy the uncommitted changes automatically.
 ```shell

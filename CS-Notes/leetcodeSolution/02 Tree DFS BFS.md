@@ -87,7 +87,7 @@ A tree is either empty or has two pointers which pzoints a tree. Tree is a struc
 2. focus on this level
 3. the meaning of return val
 
-![image-20210902174902355](https://tva1.sinaimg.cn/large/008i3skNgy1gu33r4h9y0j60u00vpgu402.jpg)
+![image-20210902174902355](https://p.ipic.vip/hplvco.jpg)
 
 
 
@@ -110,7 +110,7 @@ public int maxDepth(TreeNode root) {
 
 110\. Balanced Binary Tree (Easy)
 
-![image-20210902181627792](https://tva1.sinaimg.cn/large/008i3skNgy1gu34jjxwktj60da0bg3zt02.jpg)
+![image-20210902181627792](https://p.ipic.vip/3f7uny.jpg)
 
 [Leetcode](https://leetcode.com/problems/balanced-binary-tree/description/) 
 
@@ -161,7 +161,7 @@ Input:
 Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gu3bjfax8sj60ou0jkdjj02.jpg" alt="image-20210902221830464" style="zoom:50%;" />
+<img src="https://p.ipic.vip/g2jl78.jpg" alt="image-20210902221830464" style="zoom:50%;" />
 
 ```java
 class Solution {
@@ -301,7 +301,7 @@ Return 3. The paths that sum to 8 are:
 
 The path does not need to start or end at the root or a leaf, but it must go downwards (i.e., traveling only from parent nodes to child nodes).
 
-![image-20210903180536675](https://tva1.sinaimg.cn/large/008i3skNgy1gu49uknc5hj60zs0aqtc802.jpg)
+![image-20210903180536675](https://p.ipic.vip/dpmsi1.jpg)
 
 
 
@@ -519,7 +519,7 @@ class Solution {
 There are two left leaves in the binary tree, with values 9 and 15 respectively. Return 24.
 ```
 
-![image-20210904113557198](https://tva1.sinaimg.cn/large/008i3skNgy1gu547j5wkaj60oq0cital02.jpg)
+![image-20210904113557198](https://p.ipic.vip/dyhnos.jpg)
 
 **DFS**
 
@@ -694,11 +694,11 @@ void dfs(TreeNode*root, int sum, vector<int> path)
 
 DFS Step             | DFS vs BFS 
 :-------------------------:|:-------------------------:
-![](https://tva1.sinaimg.cn/large/008i3skNgy1gu6bvx4ehaj60cq0ia76h02.jpg)  |  ![](https://tva1.sinaimg.cn/large/008i3skNgy1gu54ionhffj60ns0egwgl02.jpg)
+![](https://p.ipic.vip/4nf35d.jpg)  |  ![](https://p.ipic.vip/wygq68.jpg)
 
 
 
-![image-20210906114004045](https://tva1.sinaimg.cn/large/008i3skNgy1gu7fkg39w3j61k20quq7m02.jpg)
+![image-20210906114004045](https://p.ipic.vip/qg1n61.jpg)
 
 ### 1. Acwing - Permutation
 
@@ -723,7 +723,7 @@ Output
 3 2 1
 ```
 
-![image-20210904121450457](https://tva1.sinaimg.cn/large/008i3skNgy1gu55bxyivqj60pg0kyaec02.jpg)
+![image-20210904121450457](https://p.ipic.vip/no5dp5.jpg)
 
 ```java
 import java.util.*;
@@ -796,7 +796,7 @@ Output
 3 4 5
 ```
 
-![image-20210905133636696](https://tva1.sinaimg.cn/large/008i3skNgy1gu6dbdeihhj60uh0u0q9z02.jpg)
+![image-20210905133636696](https://p.ipic.vip/ltiacx.jpg)
 
 ```java
 import java.util.*;
@@ -927,7 +927,7 @@ Output:
 ]
 ```
 
-![image-20210918174916030](https://tva1.sinaimg.cn/large/008i3skNgy1gullobigkgj61wo0u0tft02.jpg)
+![image-20210918174916030](https://p.ipic.vip/f75ma8.jpg)
 
 **key**
 
@@ -1129,13 +1129,13 @@ class Solution {
 
 The **n-queens** puzzle is the problem of placing `n` queens on an `n x n` chessboard such that no two queens attack each other.
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gu5ajfoszxj60d40e075402.jpg" alt="image-20210904151504135" style="zoom:80%;" />
+<img src="https://p.ipic.vip/nv3na8.jpg" alt="image-20210904151504135" style="zoom:80%;" />
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gu5ak56arsj60da0ckab002.jpg" alt="image-20210904151545659" style="zoom:50%;" />
+<img src="https://p.ipic.vip/4tcunx.jpg" alt="image-20210904151545659" style="zoom:50%;" />
 
 
 
-![image-20210921214641084](https://tva1.sinaimg.cn/large/008i3skNgy1gup9e6iq7hj60z10u0wkx02.jpg)
+![image-20210921214641084](https://p.ipic.vip/dzdadg.jpg)
 
 Acwing version
 
@@ -1331,7 +1331,7 @@ Output format
 Output an integer that represents the minimum number of moves from the upper left corner to the lower right corner.
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gu5jgqhyh9j60ay0be74z02.jpg" alt="image-20210904202353220" style="zoom:50%;" />
+<img src="https://p.ipic.vip/mrz6uh.jpg" alt="image-20210904202353220" style="zoom:50%;" />
 
 
 ```java
@@ -1576,7 +1576,7 @@ public int findBottomLeftValue(TreeNode root) {
 
 
 
-![image-20211005234225961](https://tva1.sinaimg.cn/large/008i3skNgy1gv5jevs4pzj60e811vq5r02.jpg)
+![image-20211005234225961](https://p.ipic.vip/qqgwql.jpg)
 
 
 
@@ -1674,7 +1674,7 @@ class Solution {
   4   5
 ```
 
-![image-20210905125727097](https://tva1.sinaimg.cn/large/008i3skNgy1gu6c6jx8kmj614g0p2zmw02.jpg)
+![image-20210905125727097](https://p.ipic.vip/3x0j4d.jpg)
 
 ```html
     1
@@ -1884,7 +1884,7 @@ Output:
      5   4   7
 ```
 
-![image-20210902225408248](https://tva1.sinaimg.cn/large/008i3skNgy1gu3ckhlwdyj60xi08g0v402.jpg)
+![image-20210902225408248](https://p.ipic.vip/5m252b.jpg)
 
 ```java
     // preorder root-> left -> right
@@ -2118,7 +2118,7 @@ class Solution {
 For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
 ```
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1guqi2bsicij60cw0eamxh02.jpg" alt="image-20210922233218284" style="zoom:50%;" />
+<img src="https://p.ipic.vip/s9q45k.jpg" alt="image-20210922233218284" style="zoom:50%;" />
 
 From the above picture, we can know that the ancestors of Node 7 is Node 3, 5 ,2
 

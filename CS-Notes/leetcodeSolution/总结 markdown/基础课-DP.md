@@ -713,7 +713,7 @@ public class MainA {
 
 [285. 没有上司的舞会](https://www.acwing.com/problem/content/287/)
 
-![image-20211231122836406](https://tva1.sinaimg.cn/large/008i3skNgy1gxxkun14tfj30fc0kaju4.jpg)
+![image-20211231122836406](https://p.ipic.vip/4d615t.jpg)
 
 1. 状态表示`f[u][0], f[u][1]`
 2. 集合: `f[u][0]`: 表示所有以u为根的子树中选，并且不选u这个点的方案

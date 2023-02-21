@@ -49,7 +49,7 @@ Redis 在 Java Web 主要有两个应用场景：
 
 在考虑了这些问题之后，如果觉得有必要使用缓存，那么就使用它！使用 Redis 作为缓存的读取逻辑如下图所示：
 
-![读取逻辑](https://tva1.sinaimg.cn/large/006y8mN6ly1g8nfcqhzqkj30g209kab4.jpg)
+![读取逻辑](https://p.ipic.vip/k2jsly.jpg)
 
 从上图我们可以知道以下两点：
 
@@ -62,7 +62,7 @@ Redis 在 Java Web 主要有两个应用场景：
 
 ​		分析了读操作的逻辑，下面我们来看看**写操作的流程**：
 
-![写操作](https://tva1.sinaimg.cn/large/006y8mN6ly1g8nfe4fzwgj306e077aa8.jpg)
+![写操作](https://p.ipic.vip/p7nuww.jpg)
 
 ​		从流程可以看出，更新或者写入的操作，需要多个 Redis 的操作，如果业务数据写次数远大于读次数那么就没有必要使用 Redis。
 
@@ -76,7 +76,7 @@ Redis 在 Java Web 主要有两个应用场景：
 
 　	所以我们需要使用 Redis 来应对这样的高并发需求的场合，我们先来看看**一次请求操作的流程图**：
 
-![高并发](https://tva1.sinaimg.cn/large/006y8mN6ly1g8o2ucbh0yj30eh0alt9s.jpg)
+![高并发](https://p.ipic.vip/bxeo2k.jpg)
 
 
 

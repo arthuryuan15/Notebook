@@ -24,15 +24,15 @@ https://www.baidu.com/link?url=koUWw2g7kfyE08bijqPlq9N_aZIfTofrvmEiPRxPvY6WMyMsd
 
 
 
-![image-20210526132902940](https://i.loli.net/2021/05/31/LNBdbOn2SQseqPr.png)
+![image-20210526132902940](https://p.ipic.vip/93ivco.png)
 
-![image-20210526132928844](https://i.loli.net/2021/05/31/nzUEbeVs6YZrWfB.png)
+![image-20210526132928844](https://p.ipic.vip/1pvy1n.png)
 
 
 
 ## 2.2 add library to classpath 飘红？
 
-![这里写图片描述](https://img-blog.csdn.net/20170822194222897?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXhwZWN0NTIx/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://p.ipic.vip/fxdfr4.png)
 
 
 
@@ -44,7 +44,7 @@ https://www.cnblogs.com/jifengblog/p/12387656.html
 
 2. maven工具左上角的自动导入
 
-   ![image-20210511105601557](https://i.loli.net/2021/05/31/K65q9JAohNWQinX.png)
+   ![image-20210511105601557](https://p.ipic.vip/vvn4w9.png)
 
 
 
@@ -63,7 +63,7 @@ https://zhuanlan.zhihu.com/p/112858445
 
 **右侧代码缩略图效果：**
 
-![img](https://pic1.zhimg.com/80/v2-cf64c0f32d870095b5ad314a8dd17898_1440w.jpg)
+![img](https://p.ipic.vip/pwudip.jpg)
 
 ### 2.4.2 Rainbow Brackets
 
@@ -79,13 +79,13 @@ https://zhuanlan.zhihu.com/p/112858445
 
 **设置自定义颜色：**
 
-![img](https://pic2.zhimg.com/80/v2-dbf1ea821e699ba4c31ffca259006ab5_1440w.jpg)
+![img](https://p.ipic.vip/be0rfv.jpg)
 
 
 
 **着色后的日志打印效果：**
 
-![img](https://pic4.zhimg.com/80/v2-6b1971d5f1a186075711c96eb212184b_1440w.jpg)
+![img](https://p.ipic.vip/wwvqj1.jpg)
 
 
 
@@ -101,7 +101,7 @@ https://zhuanlan.zhihu.com/p/112858445
 
 **RestfulToolkit**则是一个可以解决上述问题的，非常方便的IDEA集成插件，从此`Postman`怕是要下岗了：
 
-![img](https://pic3.zhimg.com/80/v2-c4c7573d721e1c0ee318b4c3654b53fe_1440w.jpg)
+![img](https://p.ipic.vip/7widap.jpg)
 
 ------
 
@@ -123,11 +123,11 @@ https://zhuanlan.zhihu.com/p/112858445
 
 **GsonFormat**则是一个**JSON格式数据 → 对象**的快速**代码自动生成**插件。
 
-<img src="https://pic1.zhimg.com/80/v2-0e93603daaf0604a7ae9b10a3580164c_1440w.jpg" alt="img" style="zoom:33%;" />
+<img src="https://p.ipic.vip/bhyind.jpg" alt="img" style="zoom:33%;" />
 
-<img src="https://pic3.zhimg.com/80/v2-d1fc8421e5a5bb675ab0a561b3990a7e_1440w.jpg" alt="img" style="zoom:33%;" />
+<img src="https://p.ipic.vip/s24jnv.jpg" alt="img" style="zoom:33%;" />
 
-<img src="https://pic3.zhimg.com/80/v2-c14505696c3461151cdf9453b48f9666_1440w.jpg" alt="img" style="zoom:33%;" />
+<img src="https://p.ipic.vip/ca62sd.jpg" alt="img" style="zoom:33%;" />
 
 
 

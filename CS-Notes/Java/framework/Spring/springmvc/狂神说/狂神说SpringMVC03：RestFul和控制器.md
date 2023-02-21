@@ -112,7 +112,7 @@ public interface Controller {
 
 - 运行tomcat测试
 
-  ![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsuOfarw6u03VH0lJg4tnml6mspCRTKGuwzQQy7rx7NMia7t5Xu1DYOQiag/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+  ![img](https://p.ipic.vip/1cih7n.jpg)
 
   
 
@@ -232,7 +232,7 @@ Restful就是一个资源定位及资源操作的风格。不是标准也不是�
 
 3. 我们来测试请求查看下
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsu5BqyAspPK6GlhgxeV1nS0RWPnUfVBuaiadicaicQepibic2EVkyDflUh3qQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+   ![img](https://p.ipic.vip/wj3kxr.jpg)
 
 4. 思考：使用路径变量的好处？
 
@@ -244,7 +244,7 @@ Restful就是一个资源定位及资源操作的风格。不是标准也不是�
 
      
 
-     ![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsumkKQDDBx9D7E67IK9dmVtHnjn0WjPSOZxKnwz9AXrTPRLy6Xu42yrg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+     ![img](https://p.ipic.vip/167t9g.jpg)
 
 6. 我们来修改下对应的参数类型，再次测试
 
@@ -262,7 +262,7 @@ Restful就是一个资源定位及资源操作的风格。不是标准也不是�
    }
    ```
 
-   ![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsuJXyVjg5EaXZiaO78ibGzhUXnEz5UlbRTRDKzGNh0t5WspXrpvSLe9y9w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+   ![img](https://p.ipic.vip/i5rj8e.jpg)
 
 **使用method属性指定请求类型**
 
@@ -283,7 +283,7 @@ Restful就是一个资源定位及资源操作的风格。不是标准也不是�
 
 - 我们使用浏览器地址栏进行访问默认是Get请求，会报错405：
 
-  ![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsucZBtV1jA2Clpa2utiajS6zkWWoYIo8VhqlUGIOSiacAjCsiaJEOeVvNUQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+  ![img](https://p.ipic.vip/v7rg1g.jpg)
 
 - 如果将POST修改为GET则正常了；
 
@@ -296,7 +296,7 @@ Restful就是一个资源定位及资源操作的风格。不是标准也不是�
   }
   ```
 
-  ![img](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7JOmNdhqNbrRK9XaseXIDsua1f90EJnCRJxuBoeSWiaTmdVfjIDgUo5v6ENY5N307GfoXUp4PxYu0g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+  ![img](https://p.ipic.vip/wa0eet.jpg)
 
 **小结：**
 

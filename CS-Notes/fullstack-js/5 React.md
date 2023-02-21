@@ -1003,7 +1003,7 @@ Finally, a component is *unmounted* when it’s removed from the DOM. For exampl
 
 It’s worth noting that each component instance has its own lifecycle. For example, if you have 3 buttons on a page, then there are 3 component instances, each with its own lifecycle. However, once a component instance is unmounted, that’s it—it will never be re-mounted, or updated again, or unmounted.
 
-![image-20210228191622174](https://tva1.sinaimg.cn/large/e6c9d24egy1go3svl2n5mj21cc0u0dlt.jpg)
+![image-20210228191622174](https://p.ipic.vip/qxzaqx.jpg)
 
 
 
