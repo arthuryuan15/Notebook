@@ -2,6 +2,28 @@
 
  [SpringBoot基础.pdf](../../../../../../Java/基础教程（视频）/框架/04-Spring Boot/讲义(md,pdf)/SpringBoot基础.pdf) 
 
+1.   from my github repo
+
+     
+
+2.   from idea
+
+     File-New-Project-Spring Initializer
+
+     ![image-20230222134131813](/Users/yuanjinshuai/Dropbox/Mac/Documents/allNotes/CS-Notes/Java/02 framework/Spring/springboot/assets/image-20230222134131813.png)
+
+     SpringBoot version is 2.7.8
+
+     ![image-20230222134225655](/Users/yuanjinshuai/Dropbox/Mac/Documents/allNotes/CS-Notes/Java/02 framework/Spring/springboot/assets/image-20230222134225655.png)
+
+3.   `git clone https://github.com/arthuryuan15/mysite-springboot`
+
+     Then run it
+
+2.   
+
+
+
 ## 学习目标：
 
 1. 能够理解Spring的优缺点
