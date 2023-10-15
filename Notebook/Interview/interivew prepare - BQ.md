@@ -1,10 +1,26 @@
+```
+Kim, Minwoo
+10:38 AM
+CAR - Context, Action, Result 
+
+Customer Obsession 
+Learn and Be Curious
+Earn trust 
+Invent and Simplify
+Deliver Results 
+Think Big 
+Bias for Action
+Ownership 
+Have backbone; disagree and commit
+```
+
+
+
 guidewire 
 
 >   3 Tell me about your work experiences.
 >
 >   8 Come up with two or three reasons you want to work for the company
-
-
 
 
 
@@ -26,7 +42,31 @@ One time my supervisor needed me to develop a code checking tool from the scratc
 
 
 
-# 3 work experience
+# 3 self-intro || work experience
+
+1 min
+
+I’ve been working on software design and development related work for 3 years. 
+
+[present] My experience includes implementing backend services to support ten millions of users and producing robust solutions to imporve customer service. 
+
+Creating great services for customers and I have been enjoying working with customers.
+
+[past] I'm so passionate about backend services, espcially for data processing. ==[Example]== I am always happy to learn new technologies and incorporate them with what I’ve been doing.
+
+[Company]
+
+I know aws is ... , I'm exited to learn move about your company and the chace to contribute to your team with my skill.
+
+ Keeping learning and being curious always refreshes my mind with better designs and solutions.
+
+
+
+[future] Once I commit a task I I always feel a strong sense of success. Therefore I will work relentlessly to achieve my next goals and will alway try to finish it earlier than what I have promised.
+
+
+
+
 
 My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as a software developer in China. 
 
@@ -106,15 +146,89 @@ So learing software developing will help me to develop critical thinking, progra
 
 He will be a great fit for the software engineering position at our company. He did almost two years of a full-time job at Baidu and Gaotu as a Software developer. He has 3 years of software development experience, one year of them in data mining and machine learning fields. two years of them is backend developer. His current focus is on building a back-end web service. He experienced a full software development life cycle including requirement, system analysis, design, coding, testing, integration and maintenance. He is also familiar with common back-end frameworks and dev tools. He is curious about new possibilities and challenging things. He has received systematic training in software development in Canada, which show his great passion for software knowledge. He has a solid understanding of Java language and is good at data structure and algorithms. I believe he has the ability to be a great team member and write efficient code. 
 
+# Behavior Question @amazon
 
 
-# 13 ask interviewer
-
-1.   What training programs are available to your employees?
-2.   what's the tech stack used in your team?
-3.   ~~How does one advance in the company?~~
 
 
+
+CAR - Context, Action, Result 
+
+### 1 Failure：（Customer Obsession， Earn Trust ）
+
+Automation test.
+
+五个例子
+2 most challenging （Insist on the Highest Standards， Ownership ， Learn and Be Curious ）
+
+A/B test
+
+
+
+1.   [Context] 
+
+     
+
+2.   [Action] 
+
+     1.   
+
+     
+
+3.    [Result]
+
+      1.   
+
+
+
+1.   
+
+3 miss deadline （Customer Obsession，Deliver Results ，Ownership，Dive Deep）
+两个例子
+
+
+
+
+4 conflict （Customer Obsession， Earn Trust ）
+
+两个例子
+
+
+5 took a risk, or do not have much time to make a decision （Bias for Action， Ownership ）
+
+三个例子
+
+6 challenges from customers. （Customer Obsession， Earn Trust ）
+一个例子
+7 negative feedback （Earn Trust ）
+一个例子
+8 sacrifice short for long goal （Think Big）
+一个例子
+9 tough decision  （Bias for Action ）
+一个例子
+
+
+
+
+
+General bq
+Why amazon
+Introduce yourself
+Weakness and strength
+
+
+
+## Ask interviewer
+
+1.   Can you tell me more about the day-to-day responsibilities of this job?
+
+2.   Could you tell me the boarding process?
+
+3.   How do you define success for this position? What metrics are you using to measure my accomplishments?
+
+4.   What have been the biggest challenges this year for the team?
+
+        
 
 # 14 Environment
 
@@ -125,8 +239,6 @@ I have worked in many types of environments and enjoyed learning new things from
 
 
 **14 What was a time when you used a novel idea to solve a problem?**
-
-
 
 
 

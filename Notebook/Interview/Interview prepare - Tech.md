@@ -221,17 +221,3 @@ We are seeking bright Java Application developer with hands-on experience in int
 · Strong interpersonal and team communications skills are essential.
 
 · BS degree in Computer Science or equivalent; advanced degree a plus
-
-
-
-
-
-<<<<<<< HEAD
-
-
-websocket
-
- java: volatile, annotation, interface, 事务,modifier.
-=======
-1. 
->>>>>>> 53a76207f39470221decb3b4149be9a8ec98a2f9

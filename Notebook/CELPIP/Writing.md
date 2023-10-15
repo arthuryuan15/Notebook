@@ -2,6 +2,20 @@
 
 
 
+# 2 Vocabulary
+
+1.   Range of words and phrases
+
+     When it comes to ...
+
+     My prefernce for ... comes from ....
+
+     use as instead of beacause
+
+     
+
+
+
 # Writing Task 1
 
 
