@@ -55,7 +55,7 @@ VALUES (1, 111);
 
 2. SQL Console
 
-   ​														<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsru13w0rwj30ti0pw766.jpg" alt="image-20210724103105089" style="zoom:33%;" />
+   ​														<img src="https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsn3bqd0j30ti0pwaby.jpg" alt="image-20210724103105089" style="zoom:33%;" />
 
 3. About
 
@@ -79,7 +79,7 @@ JWrapper
 mysql  -u root -h 1.117.200.132 -p
 ```
 
-![image-20210627113448215](https://tva1.sinaimg.cn/large/008i3skNly1grwo4zfwjqj31030u00xp.jpg)
+![image-20210627113448215](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsn04wz2j31030u0mzl.jpg)
 
 
 
@@ -231,7 +231,7 @@ SELECT  * FROM plan_table WHERE statement_id = '140';
 
 ## 7 Qustion 1
 
-![Oracle Sample Database](https://www.oracletutorial.com/wp-content/uploads/2017/07/Oracle-Sample-Database.png)
+![Oracle Sample Database](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsn1dxs5j30it0kk76e.jpg)
 
 1. application return the same result when we execute the same request every time?
 2. create like this query based on our database
@@ -331,7 +331,7 @@ WHERE e.first_name=Deneen
 
 
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gu1tj98vlwj60s20f6jtx02.jpg" alt="image-20210901151001771" style="zoom:50%;" />
+<img src="https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsn4zh4ij30s20f6go5.jpg" alt="image-20210901151001771" style="zoom:50%;" />
 
 ```mysql
 SELECT * FROM employees e

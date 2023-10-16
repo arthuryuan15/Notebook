@@ -1,4 +1,0 @@
-POSTMAN
-
-linux
-

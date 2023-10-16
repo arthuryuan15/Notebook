@@ -58,13 +58,11 @@ Creating great services for customers and I have been enjoying working with cust
 
 I know aws is ... , I'm exited to learn move about your company and the chace to contribute to your team with my skill.
 
- Keeping learning and being curious always refreshes my mind with better designs and solutions.
+ Keeping learning and being curious always refreshes my mind with better designs and solutions.[my strength]
 
 
 
 [future] Once I commit a task I I always feel a strong sense of success. Therefore I will work relentlessly to achieve my next goals and will alway try to finish it earlier than what I have promised.
-
-
 
 
 
@@ -73,12 +71,6 @@ My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as a software dev
  In GAOTU.  
 
 My primary responsibility is to develop an online teaching platform.  I delivered new features on this platform about homework, including clock-in setting time and reminder tasks, comments and likes etc. I also delivered notifications for different types of courses based on Kafka. 
-
- In Baidu. 
-
-My primary responsibility is to develop automated test solutions for the systems.  I created a code check tool and installed it on a test pipeline.  The code check tool will check all submitted code is suitable for the specific rules.  If not, it will send a notification by email.  After developing these tools on the test pipeline, this tool found ten problems in the code in a month.
-
-
 
 
 
@@ -228,7 +220,7 @@ Weakness and strength
 
 4.   What have been the biggest challenges this year for the team?
 
-        
+  ​      
 
 # 14 Environment
 

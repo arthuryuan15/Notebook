@@ -114,7 +114,7 @@ https://webtreesmanual.com/ 这是其他志愿者写的使用手册
 
 见附件<Front-end page design effects前端页面设计效果图.jpg>
 
-![Front-end page design effects前端页面设计效果图](https://tva1.sinaimg.cn/large/008i3skNly1gs9q826m43j30u00yejxn.jpg)
+![Front-end page design effects前端页面设计效果图](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsn81arej30u00yetbl.jpg)
 
 
 
@@ -139,7 +139,7 @@ description:
 
 3、现有报告模块示例: https://dev.webtrees.net/demo-dev/tree/demo （点击菜单栏-报告）
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gs8a2l4se9j313l0u0wpl.jpg" alt="image-20210707123454783" style="zoom:33%;" />
+<img src="https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsnn002zj313l0u0jwa.jpg" alt="image-20210707123454783" style="zoom:33%;" />
 
 
 
@@ -167,7 +167,7 @@ https://github.com/fisharebest/webtrees/tree/master/app/Report
 
 http://localhost:8000/index.php?route=/tree/tree1
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gs9rle2d1bj30zm0lcdmh.jpg" alt="image-20210708192646336" style="zoom:33%;" />
+<img src="https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsnplxttj30zm0lc770.jpg" alt="image-20210708192646336" style="zoom:33%;" />
 
 
 
@@ -189,7 +189,7 @@ official website: https://webtrees.net/
 
 or using debug to run the application
 
-![image-20210708184727406](https://tva1.sinaimg.cn/large/008i3skNly1gs9qgi6n9dj314k0u0wlu.jpg)
+![image-20210708184727406](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsn9tmv9j314k0u00wg.jpg)
 
 
 
@@ -217,9 +217,9 @@ app(ModuleService::class)->findByComponent(ModuleMenuInterface::class, $tree, Au
 
 #### 1 genealogy menu
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsbqjp093kj30uu0negr5.jpg" alt="image-20210710122140285" style="zoom:33%;" />
+<img src="https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsnqywvcj30uu0nedib.jpg" alt="image-20210710122140285" style="zoom:33%;" />
 
-![image-20210710122108582](https://tva1.sinaimg.cn/large/008i3skNly1gsbqj5sm13j31bq0cc76m.jpg)
+![image-20210710122108582](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsnbkksnj31bq0cc40h.jpg)
 
 #### 2 genealogy submenu
 
@@ -227,15 +227,15 @@ app(ModuleService::class)->findByComponent(ModuleMenuInterface::class, $tree, Au
 
 `menu-item.phtml`
 
-![image-20210710122728848](https://tva1.sinaimg.cn/large/008i3skNly1gsbqps5pl4j31h10u0444.jpg)
+![image-20210710122728848](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsnchliwj31h10u0dkr.jpg)
 
 
 
 **get subtree from DB**
 
-![image-20210710230138306](https://tva1.sinaimg.cn/large/008i3skNly1gsc91kslvdj31fw0nen1z.jpg)
+![image-20210710230138306](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsneehj4j31fw0ne0ww.jpg)
 
-![image-20210710230312229](https://tva1.sinaimg.cn/large/008i3skNly1gsc937dgfhj30y80se7gk.jpg)
+![image-20210710230312229](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsngu9r2j30y80sewif.jpg)
 
 
 
@@ -369,7 +369,7 @@ Fisharebest\Webtrees\Tree::__set_state(array(
 
 
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNly1gsbs6iiihvj311e0u0k09.jpg" alt="image-20210710131811610" style="zoom:50%;" />
+<img src="https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsnsllspj311e0u0n2c.jpg" alt="image-20210710131811610" style="zoom:50%;" />
 
 
 
@@ -465,11 +465,11 @@ $pdf = ob_get_clean();
 
 
 
-![image-20210714110439175](https://tva1.sinaimg.cn/large/008i3skNly1gsgasssynej30gg07i75b.jpg)
+![image-20210714110439175](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsni0bgwj30gg07i750.jpg)
 
-![image-20210714110653853](https://tva1.sinaimg.cn/large/008i3skNly1gsgav4hum9j30fo0hidho.jpg)
+![image-20210714110653853](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsnjf7yfj30fo0himyn.jpg)
 
-![image-20210714110932190](https://tva1.sinaimg.cn/large/008i3skNly1gsgaxvft10j30n60uagq2.jpg)
+![image-20210714110932190](https://tva1.sinaimg.cn/large/008vOhrAgy1hiwsnkumrlj30n60ua413.jpg)
 
 ```html
 <List list="individual" filter1="BIRT:PLAC CONTAINS $birthplace" filter2="BIRT:DATE GTE $birthdate1" filter3="BIRT:DATE LTE $birthdate2" filter4="NAME CONTAINS $name" sortby="$sortby">
