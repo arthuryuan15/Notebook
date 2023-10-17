@@ -1,3 +1,7 @@
+https://github.com/Interview-Science/interview-english
+
+
+
 ```
 Kim, Minwoo
 10:38 AM
@@ -46,31 +50,32 @@ One time my supervisor needed me to develop a code checking tool from the scratc
 
 1 min
 
-I’ve been working on software design and development related work for 3 years. 
+I’ve been working on software design and development-related work for 3 years. 
 
-[present] My experience includes implementing backend services to support ten millions of users and producing robust solutions to imporve customer service. 
+[present] My experience includes implementing backend services to support tens of millions of users and producing robust solutions to improve customer service. 
 
 Creating great services for customers and I have been enjoying working with customers.
 
-[past] I'm so passionate about backend services, espcially for data processing. ==[Example]== I am always happy to learn new technologies and incorporate them with what I’ve been doing.
+[past] I'm so passionate about backend services, especially for data processing. ==[Example]== I am always happy to learn new technologies and incorporate them with what I’ve been doing.
+
+
+
+big query 
+
+data stru
+
+
+
+
 
 [Company]
 
-I know aws is ... , I'm exited to learn move about your company and the chace to contribute to your team with my skill.
+I know aws is ... , I'm excited to learn more about your company and the chance to contribute to your team with my skill.
 
  Keeping learning and being curious always refreshes my mind with better designs and solutions.[my strength]
 
 
-
-[future] Once I commit a task I I always feel a strong sense of success. Therefore I will work relentlessly to achieve my next goals and will alway try to finish it earlier than what I have promised.
-
-
-
-My name is Jinshuai Yuan. I've been working on Baidu and Gaotu as a software developer in China. 
-
- In GAOTU.  
-
-My primary responsibility is to develop an online teaching platform.  I delivered new features on this platform about homework, including clock-in setting time and reminder tasks, comments and likes etc. I also delivered notifications for different types of courses based on Kafka. 
+[future] Once I commit to a task I always feel a strong sense of success. Therefore I will work relentlessly to achieve my next goals and will always try to finish it earlier than what I have promised.
 
 
 
