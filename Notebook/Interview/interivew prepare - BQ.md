@@ -1,7 +1,3 @@
-https://github.com/Interview-Science/interview-english
-
-
-
 ```
 Kim, Minwoo
 10:38 AM
