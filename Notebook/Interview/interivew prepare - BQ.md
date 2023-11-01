@@ -1,22 +1,4 @@
-```
-Kim, Minwoo
-10:38 AM
-CAR - Context, Action, Result 
-
-Customer Obsession 
-Learn and Be Curious
-Earn trust 
-Invent and Simplify
-Deliver Results 
-Think Big 
-Bias for Action
-Ownership 
-Have backbone; disagree and commit
-```
-
-
-
-guidewire 
+Guidewire 
 
 >   3 Tell me about your work experiences.
 >
@@ -46,30 +28,19 @@ One time my supervisor needed me to develop a code checking tool from the scratc
 
 1 min
 
-I’ve been working on software design and development-related work for 3 years. 
+I’ve been working on software design and development related work for 3 years. 
 
 [present] My experience includes implementing backend services to support tens of millions of users and producing robust solutions to improve customer service. 
 
-Creating great services for customers and I have been enjoying working with customers.
-
-[past] I'm so passionate about backend services, especially for data processing. ==[Example]== I am always happy to learn new technologies and incorporate them with what I’ve been doing.
 
 
-
-big query 
-
-data stru
-
-
-
-
+[past] I'm passionate about backend services, especially for data processing. ==[Example]== I am always happy to learn new technologies and incorporate them with what I’ve been doing.
 
 [Company]
 
 I know aws is ... , I'm excited to learn more about your company and the chance to contribute to your team with my skill.
 
- Keeping learning and being curious always refreshes my mind with better designs and solutions.[my strength]
-
+ Keeping learning and being curious always refreshes my mind with better designs and solutions. [my strength]
 
 [future] Once I commit to a task I always feel a strong sense of success. Therefore I will work relentlessly to achieve my next goals and will always try to finish it earlier than what I have promised.
 
@@ -226,6 +197,12 @@ Weakness and strength
 # 14 Environment
 
 I have worked in many types of environments and enjoyed learning new things from each. I would say that while I don’t prefer a particular environment, I really like working with people who are committed to getting things done and who are passionate about their work.
+
+
+
+## 15 why you want to find a new job?
+
+"I've enjoyed my time at my current job, but I'm ready for a new challenge and a chance to grow my skills in a different setting. I'm really impressed with the innovative work your company is doing, and I think it's a place where I could make a real impact."
 
 
 
